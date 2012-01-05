@@ -46,6 +46,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     self.imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"BeerMap_Logo.png"]];
     self.image = [[MJGLKUIViewWrapper alloc] initWithUIView:self.imageView];
     self.image.layoutSpec = MJGLKLayoutSpecMake(MJGLKSizeWrapContent, MJGLKSizeWrapContent, 0.0f, UIEdgeInsetsMake(5.0f, 5.0f, 5.0f, 5.0f), UIEdgeInsetsZero);
@@ -61,7 +62,8 @@
     filler2.layoutSpec = MJGLKLayoutSpecMake(40, MJGLKSizeFillParent, 0.0f, UIEdgeInsetsMake(10.0f, 10.0f, 10.0f, 10.0f), UIEdgeInsetsZero);
     
     MJGLKLinearLayout *hLinearLayout = [[MJGLKLinearLayout alloc] initWithOrientation:MJGLKLinearLayoutOrientationHorizontal views:[NSArray arrayWithObjects:filler1, filler2, nil]];
-    hLinearLayout.layoutSpec = MJGLKLayoutSpecMake(MJGLKSizeFillParent, MJGLKSizeFillParent, 1.0f, UIEdgeInsetsZero, UIEdgeInsetsZero);
+    hLinearLayout.view.backgroundColor = [UIColor greenColor];
+    hLinearLayout.layoutSpec = MJGLKLayoutSpecMake(MJGLKSizeFillParent, MJGLKSizeFillParent, 1.0f, UIEdgeInsetsMake(5.0f, 5.0f, 5.0f, 5.0f), UIEdgeInsetsMake(5.0f, 5.0f, 5.0f, 5.0f));
     
     MJGLKLinearLayout *vLinearLayout = [[MJGLKLinearLayout alloc] initWithOrientation:MJGLKLinearLayoutOrientationVertical views:[NSArray arrayWithObjects:self.image, hLinearLayout, nil]];
     vLinearLayout.layoutSpec = MJGLKLayoutSpecMake(MJGLKSizeFillParent, MJGLKSizeFillParent, 0.0f, UIEdgeInsetsZero, UIEdgeInsetsZero);

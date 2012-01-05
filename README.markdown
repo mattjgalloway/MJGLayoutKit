@@ -4,6 +4,14 @@
 
 MJGLayoutKit is a layout framework for iOS which gives options for automatically laying out views.
 
+An example of what MJGLayoutKit can do is shown below where the layout is automatically reflowed when 
+the size of the image is changed. In this layout there is 1 vertical layout, 1 horizontal layout and 
+1 frame layout. The different colours show the different views/layouts indicating how padding and 
+margins can be set.
+
+![sample-1](https://github.com/mattjgalloway/MJGLayoutKit/raw/master/Images/Sample-1.png) 
+![sample-2](https://github.com/mattjgalloway/MJGLayoutKit/raw/master/Images/Sample-2.png)
+
 ## License
 
 MJGLayoutKit uses the 2-clause BSD license. So you should be free to use it pretty much however 

@@ -27,6 +27,8 @@
     if ((self = [super initWithViews:views])) {
         self.orientation = inOrientation;
         self.wrapperView = [[UIView alloc] initWithFrame:CGRectZero];
+        self.wrapperView.backgroundColor = [UIColor clearColor];
+        self.wrapperView.opaque = NO;
     }
     return self;
 }

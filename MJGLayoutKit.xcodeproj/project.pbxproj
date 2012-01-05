@@ -1,0 +1,382 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C998ACDD14B3B79D00C5A277 /* MJGLayoutKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C998ACDC14B3B79D00C5A277 /* MJGLayoutKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C998ACE014B3B7ED00C5A277 /* MJGLKView.h in Headers */ = {isa = PBXBuildFile; fileRef = C998ACDE14B3B7ED00C5A277 /* MJGLKView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C998ACE114B3B7ED00C5A277 /* MJGLKView.m in Sources */ = {isa = PBXBuildFile; fileRef = C998ACDF14B3B7ED00C5A277 /* MJGLKView.m */; };
+		C998ACE614B3B96A00C5A277 /* MJGLKLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = C998ACE414B3B96900C5A277 /* MJGLKLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C998ACE714B3B96A00C5A277 /* MJGLKLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C998ACE514B3B96A00C5A277 /* MJGLKLayout.m */; };
+		C998ACEA14B3B98800C5A277 /* MJGLKLinearLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = C998ACE814B3B98800C5A277 /* MJGLKLinearLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C998ACEB14B3B98800C5A277 /* MJGLKLinearLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C998ACE914B3B98800C5A277 /* MJGLKLinearLayout.m */; };
+		C998B1FF14B4A74800C5A277 /* MJGLKDataStructures.h in Headers */ = {isa = PBXBuildFile; fileRef = C998B1FE14B4A74700C5A277 /* MJGLKDataStructures.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C998B20214B4AC7E00C5A277 /* MJGLKDataStructures.m in Sources */ = {isa = PBXBuildFile; fileRef = C998B20114B4AC7E00C5A277 /* MJGLKDataStructures.m */; };
+		C998B20414B4ACC800C5A277 /* MJGLKBase.h in Headers */ = {isa = PBXBuildFile; fileRef = C998B20314B4ACC800C5A277 /* MJGLKBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C998B20714B4B6AE00C5A277 /* MJGLKUIViewWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = C998B20514B4B6AC00C5A277 /* MJGLKUIViewWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C998B20814B4B6AE00C5A277 /* MJGLKUIViewWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C998B20614B4B6AD00C5A277 /* MJGLKUIViewWrapper.m */; };
+		C9DE3E3B14B5A8CF0043D446 /* MJGLKView+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = C9DE3E3914B5A8CF0043D446 /* MJGLKView+Private.h */; };
+		C9DE3E3C14B5A8CF0043D446 /* MJGLKView+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DE3E3A14B5A8CF0043D446 /* MJGLKView+Private.m */; };
+		C9DE3E3F14B5ABB20043D446 /* MJGLKRootView.h in Headers */ = {isa = PBXBuildFile; fileRef = C9DE3E3D14B5ABB20043D446 /* MJGLKRootView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9DE3E4014B5ABB20043D446 /* MJGLKRootView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DE3E3E14B5ABB20043D446 /* MJGLKRootView.m */; };
+		C9DE3E5C14B5BEF90043D446 /* MJGLKLayout+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = C9DE3E5A14B5BEF80043D446 /* MJGLKLayout+Private.h */; };
+		C9DE3E5D14B5BEF90043D446 /* MJGLKLayout+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DE3E5B14B5BEF80043D446 /* MJGLKLayout+Private.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C998ACC314B3B6DE00C5A277 /* MJGLayoutKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MJGLayoutKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C998ACC714B3B6DE00C5A277 /* MJGLayoutKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MJGLayoutKit-Info.plist"; sourceTree = "<group>"; };
+		C998ACCB14B3B6DE00C5A277 /* MJGLayoutKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MJGLayoutKit-Prefix.pch"; sourceTree = "<group>"; };
+		C998ACDC14B3B79D00C5A277 /* MJGLayoutKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGLayoutKit.h; sourceTree = "<group>"; };
+		C998ACDE14B3B7ED00C5A277 /* MJGLKView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGLKView.h; sourceTree = "<group>"; };
+		C998ACDF14B3B7ED00C5A277 /* MJGLKView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGLKView.m; sourceTree = "<group>"; };
+		C998ACE414B3B96900C5A277 /* MJGLKLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGLKLayout.h; sourceTree = "<group>"; };
+		C998ACE514B3B96A00C5A277 /* MJGLKLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGLKLayout.m; sourceTree = "<group>"; };
+		C998ACE814B3B98800C5A277 /* MJGLKLinearLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGLKLinearLayout.h; sourceTree = "<group>"; };
+		C998ACE914B3B98800C5A277 /* MJGLKLinearLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGLKLinearLayout.m; sourceTree = "<group>"; };
+		C998B1FE14B4A74700C5A277 /* MJGLKDataStructures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGLKDataStructures.h; sourceTree = "<group>"; };
+		C998B20114B4AC7E00C5A277 /* MJGLKDataStructures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGLKDataStructures.m; sourceTree = "<group>"; };
+		C998B20314B4ACC800C5A277 /* MJGLKBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGLKBase.h; sourceTree = "<group>"; };
+		C998B20514B4B6AC00C5A277 /* MJGLKUIViewWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGLKUIViewWrapper.h; sourceTree = "<group>"; };
+		C998B20614B4B6AD00C5A277 /* MJGLKUIViewWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGLKUIViewWrapper.m; sourceTree = "<group>"; };
+		C9DE3E3914B5A8CF0043D446 /* MJGLKView+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MJGLKView+Private.h"; sourceTree = "<group>"; };
+		C9DE3E3A14B5A8CF0043D446 /* MJGLKView+Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MJGLKView+Private.m"; sourceTree = "<group>"; };
+		C9DE3E3D14B5ABB20043D446 /* MJGLKRootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGLKRootView.h; sourceTree = "<group>"; };
+		C9DE3E3E14B5ABB20043D446 /* MJGLKRootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGLKRootView.m; sourceTree = "<group>"; };
+		C9DE3E5A14B5BEF80043D446 /* MJGLKLayout+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MJGLKLayout+Private.h"; sourceTree = "<group>"; };
+		C9DE3E5B14B5BEF80043D446 /* MJGLKLayout+Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MJGLKLayout+Private.m"; sourceTree = "<group>"; };
+		C9DE3E6D14B5DD330043D446 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C9DE3E6F14B5DD330043D446 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C9DE3E7114B5DD330043D446 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C998ACBE14B3B6DE00C5A277 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C998ACB514B3B6DE00C5A277 = {
+			isa = PBXGroup;
+			children = (
+				C998ACC514B3B6DE00C5A277 /* MJGLayoutKit */,
+				C9DE3E6C14B5DD330043D446 /* Frameworks */,
+				C998ACC414B3B6DE00C5A277 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C998ACC414B3B6DE00C5A277 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C998ACC314B3B6DE00C5A277 /* MJGLayoutKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C998ACC514B3B6DE00C5A277 /* MJGLayoutKit */ = {
+			isa = PBXGroup;
+			children = (
+				C998ACDB14B3B77C00C5A277 /* Source */,
+				C998ACC614B3B6DE00C5A277 /* Supporting Files */,
+			);
+			name = MJGLayoutKit;
+			sourceTree = SOURCE_ROOT;
+		};
+		C998ACC614B3B6DE00C5A277 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C998ACC714B3B6DE00C5A277 /* MJGLayoutKit-Info.plist */,
+				C998ACCB14B3B6DE00C5A277 /* MJGLayoutKit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C998ACDB14B3B77C00C5A277 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C998ACDC14B3B79D00C5A277 /* MJGLayoutKit.h */,
+				C998B20314B4ACC800C5A277 /* MJGLKBase.h */,
+				C998B1FE14B4A74700C5A277 /* MJGLKDataStructures.h */,
+				C998B20114B4AC7E00C5A277 /* MJGLKDataStructures.m */,
+				C998ACDE14B3B7ED00C5A277 /* MJGLKView.h */,
+				C998ACDF14B3B7ED00C5A277 /* MJGLKView.m */,
+				C9DE3E3914B5A8CF0043D446 /* MJGLKView+Private.h */,
+				C9DE3E3A14B5A8CF0043D446 /* MJGLKView+Private.m */,
+				C998ACE414B3B96900C5A277 /* MJGLKLayout.h */,
+				C998ACE514B3B96A00C5A277 /* MJGLKLayout.m */,
+				C9DE3E5A14B5BEF80043D446 /* MJGLKLayout+Private.h */,
+				C9DE3E5B14B5BEF80043D446 /* MJGLKLayout+Private.m */,
+				C998ACE814B3B98800C5A277 /* MJGLKLinearLayout.h */,
+				C998ACE914B3B98800C5A277 /* MJGLKLinearLayout.m */,
+				C998B20514B4B6AC00C5A277 /* MJGLKUIViewWrapper.h */,
+				C998B20614B4B6AD00C5A277 /* MJGLKUIViewWrapper.m */,
+				C9DE3E3D14B5ABB20043D446 /* MJGLKRootView.h */,
+				C9DE3E3E14B5ABB20043D446 /* MJGLKRootView.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		C9DE3E6C14B5DD330043D446 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9DE3E6D14B5DD330043D446 /* UIKit.framework */,
+				C9DE3E6F14B5DD330043D446 /* Foundation.framework */,
+				C9DE3E7114B5DD330043D446 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C998ACBF14B3B6DE00C5A277 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C998ACDD14B3B79D00C5A277 /* MJGLayoutKit.h in Headers */,
+				C998B20414B4ACC800C5A277 /* MJGLKBase.h in Headers */,
+				C998B1FF14B4A74800C5A277 /* MJGLKDataStructures.h in Headers */,
+				C998ACE014B3B7ED00C5A277 /* MJGLKView.h in Headers */,
+				C998ACE614B3B96A00C5A277 /* MJGLKLayout.h in Headers */,
+				C998ACEA14B3B98800C5A277 /* MJGLKLinearLayout.h in Headers */,
+				C998B20714B4B6AE00C5A277 /* MJGLKUIViewWrapper.h in Headers */,
+				C9DE3E3F14B5ABB20043D446 /* MJGLKRootView.h in Headers */,
+				C9DE3E3B14B5A8CF0043D446 /* MJGLKView+Private.h in Headers */,
+				C9DE3E5C14B5BEF90043D446 /* MJGLKLayout+Private.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C998ACC214B3B6DE00C5A277 /* MJGLayoutKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C998ACCE14B3B6DE00C5A277 /* Build configuration list for PBXNativeTarget "MJGLayoutKit" */;
+			buildPhases = (
+				C998ACBC14B3B6DE00C5A277 /* ShellScript */,
+				C998ACBD14B3B6DE00C5A277 /* Sources */,
+				C998ACBE14B3B6DE00C5A277 /* Frameworks */,
+				C998ACBF14B3B6DE00C5A277 /* Headers */,
+				C998ACC014B3B6DE00C5A277 /* Resources */,
+				C998ACC114B3B6DE00C5A277 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MJGLayoutKit;
+			productName = MJGLayoutKit;
+			productReference = C998ACC314B3B6DE00C5A277 /* MJGLayoutKit.framework */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C998ACB714B3B6DE00C5A277 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = C998ACBA14B3B6DE00C5A277 /* Build configuration list for PBXProject "MJGLayoutKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C998ACB514B3B6DE00C5A277;
+			productRefGroup = C998ACC414B3B6DE00C5A277 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C998ACC214B3B6DE00C5A277 /* MJGLayoutKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C998ACC014B3B6DE00C5A277 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C998ACBC14B3B6DE00C5A277 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nset +u\nif [[ $UFW_MASTER_SCRIPT_RUNNING ]]\nthen\n    # Nothing for the slave script to do\n    exit 0\nfi\nset -u\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\n    UFW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\n\tUFW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version  from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$UFW_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\n    UFW_OTHER_PLATFORM=iphonesimulator\nelse\n    UFW_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$UFW_SDK_PLATFORM$ ]]\nthen\n    UFW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${UFW_OTHER_PLATFORM}\"\nelse\n    echo \"Could not find $UFW_SDK_PLATFORM in $BUILT_PRODUCTS_DIR\"\n    exit 1\nfi\n\n\n# Short-circuit if all binaries are up to date\n\nif [[ -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && \\\n   [[ -f \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n   [[ ! \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\n   [[ -f \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && \\\n   [[ -f \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n   [[ ! \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\nthen\n    exit 0\nfi\n\n\n# Clean other platform if needed\n\nif [[ ! -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]]\nthen\n\techo \"Platform \\\"$UFW_SDK_PLATFORM\\\" was cleaned recently. Cleaning \\\"$UFW_OTHER_PLATFORM\\\" as well\"\n\techo xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" clean\n\txcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" clean\nfi\n\n\n# Make sure we are building from fresh binaries\n\nrm -rf \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\nrm -rf \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nrm -rf \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\n";
+		};
+		C998ACC114B3B6DE00C5A277 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nset +u\nif [[ $UFW_MASTER_SCRIPT_RUNNING ]]\nthen\n    # Nothing for the slave script to do\n    exit 0\nfi\nset -u\nexport UFW_MASTER_SCRIPT_RUNNING=1\n\n\n# Functions\n\n## List files in the specified directory, storing to the specified array.\n#\n# @param $1 The path to list\n# @param $2 The name of the array to fill\n#\n##\nlist_files ()\n{\n    filelist=$(ls \"$1\")\n    while read line\n    do\n        eval \"$2[\\${#$2[*]}]=\\\"\\$line\\\"\"\n    done <<< \"$filelist\"\n}\n\n\n# Sanity check\n\nif [[ ! -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]]\nthen\n    echo \"Framework target \\\"${TARGET_NAME}\\\" had no source files to build from. Make sure your source files have the correct target membership\"\n    exit 1\nfi\n\n\n# Gather information\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\n    UFW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\n    UFW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$UFW_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\n    UFW_OTHER_PLATFORM=iphonesimulator\nelse\n    UFW_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$UFW_SDK_PLATFORM$ ]]\nthen\n    UFW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${UFW_OTHER_PLATFORM}\"\nelse\n    echo \"Could not find $UFW_SDK_PLATFORM in $BUILT_PRODUCTS_DIR\"\n    exit 1\nfi\n\n\n# Short-circuit if all binaries are up to date.\n# We already checked the other platform in the prerun script.\n\nif [[ -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && [[ -f \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && [[ ! \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\nthen\n    exit 0\nfi\n\n\n# Make sure the other platform gets built\n\necho \"Build other platform\"\n\necho xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\nxcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\n\n\n# Build the fat static library binary\n\necho \"Create universal static library\"\n\necho \"$PLATFORM_DEVELOPER_BIN_DIR/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n\"$PLATFORM_DEVELOPER_BIN_DIR/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n\necho mv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nmv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\n\n\n# Build framework structure\n\necho \"Build symlinks\"\n\necho ln -sf A \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Versions/Current\"\nln -sf A \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Versions/Current\"\necho ln -sf Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Headers\"\nln -sf Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Headers\"\necho ln -sf Versions/Current/Resources \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Resources\"\nln -sf Versions/Current/Resources \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Resources\"\necho ln -sf \"Versions/Current/${EXECUTABLE_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${EXECUTABLE_NAME}\"\nln -sf \"Versions/Current/${EXECUTABLE_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${EXECUTABLE_NAME}\"\n\n\n# Link to binary for unit tests\n\nmkdir -p \"${BUILT_PRODUCTS_DIR}/.fake_fw_testing.framework\"\nln -sf \"../${WRAPPER_NAME}/${EXECUTABLE_NAME}\" \"${BUILT_PRODUCTS_DIR}/.fake_fw_testing.framework/.fake_fw_testing\"\n\n\n# Build embedded framework structure\n\necho \"Build Embedded Framework\"\n\necho rm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\necho mkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\necho cp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\ncp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\n\ndeclare -a UFW_FILE_LIST\nlist_files \"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\" UFW_FILE_LIST\nfor filename in \"${UFW_FILE_LIST[@]}\"\ndo\n    if [[ \"${filename}\" != \"Info.plist\" ]] && [[ ! \"${filename}\" =~ .*\\.lproj$ ]]\n    then\n        echo ln -sf \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\n        ln -sf \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\n    fi\ndone\n\n\n# Replace other platform's framework with a copy of this one (so that both have the same universal binary)\n\necho \"Copy from $UFW_SDK_PLATFORM to $UFW_OTHER_PLATFORM\"\n\necho rm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\nrm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\necho cp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\ncp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C998ACBD14B3B6DE00C5A277 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C998ACE114B3B7ED00C5A277 /* MJGLKView.m in Sources */,
+				C998ACE714B3B96A00C5A277 /* MJGLKLayout.m in Sources */,
+				C998ACEB14B3B98800C5A277 /* MJGLKLinearLayout.m in Sources */,
+				C998B20214B4AC7E00C5A277 /* MJGLKDataStructures.m in Sources */,
+				C998B20814B4B6AE00C5A277 /* MJGLKUIViewWrapper.m in Sources */,
+				C9DE3E3C14B5A8CF0043D446 /* MJGLKView+Private.m in Sources */,
+				C9DE3E4014B5ABB20043D446 /* MJGLKRootView.m in Sources */,
+				C9DE3E5D14B5BEF90043D446 /* MJGLKLayout+Private.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C998ACCC14B3B6DE00C5A277 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C998ACCD14B3B6DE00C5A277 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C998ACCF14B3B6DE00C5A277 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONTENTS_FOLDER_PATH = "$(WRAPPER_NAME)/Versions/$(FRAMEWORK_VERSION)";
+				DEAD_CODE_STRIPPING = NO;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MJGLayoutKit-Prefix.pch";
+				INFOPLIST_FILE = "MJGLayoutKit-Info.plist";
+				INFOPLIST_PATH = "$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/Info.plist";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				UNLOCALIZED_RESOURCES_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Resources";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		C998ACD014B3B6DE00C5A277 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONTENTS_FOLDER_PATH = "$(WRAPPER_NAME)/Versions/$(FRAMEWORK_VERSION)";
+				DEAD_CODE_STRIPPING = NO;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MJGLayoutKit-Prefix.pch";
+				INFOPLIST_FILE = "MJGLayoutKit-Info.plist";
+				INFOPLIST_PATH = "$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/Info.plist";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				UNLOCALIZED_RESOURCES_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Resources";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C998ACBA14B3B6DE00C5A277 /* Build configuration list for PBXProject "MJGLayoutKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C998ACCC14B3B6DE00C5A277 /* Debug */,
+				C998ACCD14B3B6DE00C5A277 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C998ACCE14B3B6DE00C5A277 /* Build configuration list for PBXNativeTarget "MJGLayoutKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C998ACCF14B3B6DE00C5A277 /* Debug */,
+				C998ACD014B3B6DE00C5A277 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C998ACB714B3B6DE00C5A277 /* Project object */;
+}

@@ -13,6 +13,7 @@
 #import <MJGLayoutKit/MJGLKView.h>
 
 #import <MJGLayoutKit/MJGLKLayout.h>
+#import <MJGLayoutKit/MJGLKFrameLayout.h>
 #import <MJGLayoutKit/MJGLKLinearLayout.h>
 
 #import <MJGLayoutKit/MJGLKUIViewWrapper.h>

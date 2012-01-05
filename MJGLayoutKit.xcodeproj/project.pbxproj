@@ -25,6 +25,8 @@
 		C9DE3E4014B5ABB20043D446 /* MJGLKRootView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DE3E3E14B5ABB20043D446 /* MJGLKRootView.m */; };
 		C9DE3E5C14B5BEF90043D446 /* MJGLKLayout+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = C9DE3E5A14B5BEF80043D446 /* MJGLKLayout+Private.h */; };
 		C9DE3E5D14B5BEF90043D446 /* MJGLKLayout+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DE3E5B14B5BEF80043D446 /* MJGLKLayout+Private.m */; };
+		C9DE3EAE14B603E10043D446 /* MJGLKFrameLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = C9DE3EAC14B603E00043D446 /* MJGLKFrameLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9DE3EAF14B603E10043D446 /* MJGLKFrameLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DE3EAD14B603E00043D446 /* MJGLKFrameLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		C9DE3E6D14B5DD330043D446 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C9DE3E6F14B5DD330043D446 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C9DE3E7114B5DD330043D446 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C9DE3EAC14B603E00043D446 /* MJGLKFrameLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGLKFrameLayout.h; sourceTree = "<group>"; };
+		C9DE3EAD14B603E00043D446 /* MJGLKFrameLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGLKFrameLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,8 @@
 				C998ACE514B3B96A00C5A277 /* MJGLKLayout.m */,
 				C9DE3E5A14B5BEF80043D446 /* MJGLKLayout+Private.h */,
 				C9DE3E5B14B5BEF80043D446 /* MJGLKLayout+Private.m */,
+				C9DE3EAC14B603E00043D446 /* MJGLKFrameLayout.h */,
+				C9DE3EAD14B603E00043D446 /* MJGLKFrameLayout.m */,
 				C998ACE814B3B98800C5A277 /* MJGLKLinearLayout.h */,
 				C998ACE914B3B98800C5A277 /* MJGLKLinearLayout.m */,
 				C998B20514B4B6AC00C5A277 /* MJGLKUIViewWrapper.h */,
@@ -147,6 +153,7 @@
 				C998B1FF14B4A74800C5A277 /* MJGLKDataStructures.h in Headers */,
 				C998ACE014B3B7ED00C5A277 /* MJGLKView.h in Headers */,
 				C998ACE614B3B96A00C5A277 /* MJGLKLayout.h in Headers */,
+				C9DE3EAE14B603E10043D446 /* MJGLKFrameLayout.h in Headers */,
 				C998ACEA14B3B98800C5A277 /* MJGLKLinearLayout.h in Headers */,
 				C998B20714B4B6AE00C5A277 /* MJGLKUIViewWrapper.h in Headers */,
 				C9DE3E3F14B5ABB20043D446 /* MJGLKRootView.h in Headers */,
@@ -255,6 +262,7 @@
 				C9DE3E3C14B5A8CF0043D446 /* MJGLKView+Private.m in Sources */,
 				C9DE3E4014B5ABB20043D446 /* MJGLKRootView.m in Sources */,
 				C9DE3E5D14B5BEF90043D446 /* MJGLKLayout+Private.m in Sources */,
+				C9DE3EAF14B603E10043D446 /* MJGLKFrameLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

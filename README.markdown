@@ -12,6 +12,13 @@ margins can be set.
 ![sample-1](https://github.com/mattjgalloway/MJGLayoutKit/raw/master/Images/Sample-1.png) 
 ![sample-2](https://github.com/mattjgalloway/MJGLayoutKit/raw/master/Images/Sample-2.png)
 
+In this example, the green view is a horizontal layout containing a frame layout on the left and 
+an empty view on the right. The frame layout is set to fill all remaining space and contains three 
+empty views (blue, orange and purple). The empty view on the right is set to be a fixed width and 
+fill height. The horizontal layout is then within a vertical layout along with the image at the top. 
+The image is set to wrap its content (i.e. take up just as much room as is required by the image) 
+and the horizontal layout is set to fill both width and height.
+
 ## License
 
 MJGLayoutKit uses the 2-clause BSD license. So you should be free to use it pretty much however 

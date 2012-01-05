@@ -61,12 +61,25 @@
     MJGLKUIViewWrapper *filler2 = [[MJGLKUIViewWrapper alloc] initWithUIView:filler2View];
     filler2.layoutSpec = MJGLKLayoutSpecMake(40, MJGLKSizeFillParent, 0.0f, UIEdgeInsetsMake(10.0f, 10.0f, 10.0f, 10.0f), UIEdgeInsetsZero);
     
-    MJGLKLinearLayout *hLinearLayout = [[MJGLKLinearLayout alloc] initWithOrientation:MJGLKLinearLayoutOrientationHorizontal views:[NSArray arrayWithObjects:filler1, filler2, nil]];
+    UIView *filler3View = [[UIView alloc] initWithFrame:CGRectZero];
+    filler3View.backgroundColor = [UIColor orangeColor];
+    MJGLKUIViewWrapper *filler3 = [[MJGLKUIViewWrapper alloc] initWithUIView:filler3View];
+    filler3.layoutSpec = MJGLKLayoutSpecMake(80, 20, 0.0f, UIEdgeInsetsZero, UIEdgeInsetsZero);
+    
+    UIView *filler4View = [[UIView alloc] initWithFrame:CGRectZero];
+    filler4View.backgroundColor = [UIColor purpleColor];
+    MJGLKUIViewWrapper *filler4 = [[MJGLKUIViewWrapper alloc] initWithUIView:filler4View];
+    filler4.layoutSpec = MJGLKLayoutSpecMake(20, 80, 0.0f, UIEdgeInsetsZero, UIEdgeInsetsZero);
+    
+    MJGLKFrameLayout *frameLayout = [[MJGLKFrameLayout alloc] initWithViews:[NSArray arrayWithObjects:filler1, filler3, filler4, nil]];
+    frameLayout.layoutSpec = MJGLKLayoutSpecMake(MJGLKSizeFillParent, MJGLKSizeFillParent, 1.0f, UIEdgeInsetsZero, UIEdgeInsetsZero);
+    
+    MJGLKLinearLayout *hLinearLayout = [[MJGLKLinearLayout alloc] initWithOrientation:MJGLKLinearLayoutOrientationHorizontal views:[NSArray arrayWithObjects:frameLayout, filler2, nil]];
     hLinearLayout.view.backgroundColor = [UIColor greenColor];
     hLinearLayout.layoutSpec = MJGLKLayoutSpecMake(MJGLKSizeFillParent, MJGLKSizeFillParent, 1.0f, UIEdgeInsetsMake(5.0f, 5.0f, 5.0f, 5.0f), UIEdgeInsetsMake(5.0f, 5.0f, 5.0f, 5.0f));
     
     MJGLKLinearLayout *vLinearLayout = [[MJGLKLinearLayout alloc] initWithOrientation:MJGLKLinearLayoutOrientationVertical views:[NSArray arrayWithObjects:self.image, hLinearLayout, nil]];
-    vLinearLayout.layoutSpec = MJGLKLayoutSpecMake(MJGLKSizeFillParent, MJGLKSizeFillParent, 0.0f, UIEdgeInsetsZero, UIEdgeInsetsZero);
+    vLinearLayout.layoutSpec = MJGLKLayoutSpecMake(MJGLKSizeFillParent, MJGLKSizeFillParent, 1.0f, UIEdgeInsetsZero, UIEdgeInsetsZero);
     
     self.layout = [[MJGLKRootView alloc] initWithLayout:vLinearLayout];
     

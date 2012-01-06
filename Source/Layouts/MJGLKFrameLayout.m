@@ -53,6 +53,30 @@
         maxWidth = MAX(maxWidth, view.measuredSize.width + view.layoutSpec.margin.left + view.layoutSpec.margin.right);
     }
     
+    for (MJGLKView *view in self.views) {
+        if (view.layoutSpec.width == MJGLKSizeFillParent || view.layoutSpec.height == MJGLKSizeFillParent) {
+            MJGLKDimension childWidth;
+            if (view.layoutSpec.width == MJGLKSizeFillParent) {
+                childWidth = MJGLKDimensionMake(maxWidth, MJGLKSizeConstraintExact);
+            } else {
+                childWidth = [self childDimensionFromParentDimension:width 
+                                                         withPadding:(self.layoutSpec.padding.left + self.layoutSpec.padding.right + view.layoutSpec.margin.left + view.layoutSpec.margin.right) 
+                                                       withChildSize:view.layoutSpec.width];
+            }
+            
+            MJGLKDimension childHeight;
+            if (view.layoutSpec.width == MJGLKSizeFillParent) {
+                childHeight = MJGLKDimensionMake(maxHeight, MJGLKSizeConstraintExact);
+            } else {
+                childHeight = [self childDimensionFromParentDimension:height 
+                                                          withPadding:(self.layoutSpec.padding.top + self.layoutSpec.padding.bottom + view.layoutSpec.margin.top + view.layoutSpec.margin.bottom) 
+                                                        withChildSize:view.layoutSpec.height];
+            }
+            
+            [view measureViewWithWidth:childWidth andHeight:childHeight];
+        }
+    }
+    
     maxWidth += (self.layoutSpec.padding.left + self.layoutSpec.padding.right);
     maxHeight += (self.layoutSpec.padding.top + self.layoutSpec.padding.bottom);
     

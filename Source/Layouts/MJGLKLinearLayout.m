@@ -91,6 +91,16 @@
             totalHeight += (self.layoutSpec.padding.top + self.layoutSpec.padding.bottom);
         }
         
+        if (width.constraint != MJGLKSizeConstraintExact) {
+            for (MJGLKView *view in self.views) {
+                if (view.layoutSpec.width == MJGLKSizeFillParent) {
+                    MJGLKDimension childWidth = MJGLKDimensionMake(maxWidth - view.layoutSpec.margin.left - view.layoutSpec.margin.right, MJGLKSizeConstraintExact);
+                    MJGLKDimension childHeight = MJGLKDimensionMake((NSInteger)(view.measuredSize.height), MJGLKSizeConstraintExact);
+                    [view measureViewWithWidth:childWidth andHeight:childHeight];
+                }
+            }
+        }
+        
         maxWidth += (self.layoutSpec.padding.left + self.layoutSpec.padding.right);
         
         self.measuredSize = CGSizeMake(maxWidth, totalHeight);
@@ -144,6 +154,16 @@
             totalWidth += (self.layoutSpec.padding.left + self.layoutSpec.padding.right);
         }
         
+        if (height.constraint != MJGLKSizeConstraintExact) {
+            for (MJGLKView *view in self.views) {
+                if (view.layoutSpec.height == MJGLKSizeFillParent) {
+                    MJGLKDimension childWidth = MJGLKDimensionMake((NSInteger)(view.measuredSize.width), MJGLKSizeConstraintExact);
+                    MJGLKDimension childHeight = MJGLKDimensionMake(maxHeight - view.layoutSpec.margin.top - view.layoutSpec.margin.bottom, MJGLKSizeConstraintExact);
+                    [view measureViewWithWidth:childWidth andHeight:childHeight];
+                }
+            }
+        }
+        
         maxHeight += (self.layoutSpec.padding.top + self.layoutSpec.padding.bottom);
         
         self.measuredSize = CGSizeMake(totalWidth, maxHeight);
@@ -162,6 +182,7 @@
                                          currentY, 
                                          view.measuredSize.width, 
                                          view.measuredSize.height);
+            NSLog(@"view.view.frame = %@", NSStringFromCGRect(view.view.frame));
             [view layoutView];
             currentY += (view.measuredSize.height + view.layoutSpec.margin.bottom);
         }
@@ -176,6 +197,7 @@
                                          currentY + view.layoutSpec.margin.top, 
                                          view.measuredSize.width, 
                                          view.measuredSize.height);
+            NSLog(@"view.view.frame = %@", NSStringFromCGRect(view.view.frame));
             [view layoutView];
             currentX += (view.measuredSize.width + view.layoutSpec.margin.right);
         }

@@ -60,6 +60,8 @@
             
             [view measureViewWithWidth:childWidth andHeight:childHeight];
             totalHeight += (view.layoutSpec.margin.top + view.measuredSize.height + view.layoutSpec.margin.bottom);
+            
+            maxWidth = MAX(maxWidth, view.measuredSize.width + view.layoutSpec.margin.left + view.layoutSpec.margin.right);
         }
         
         totalHeight += (self.layoutSpec.padding.top + self.layoutSpec.padding.bottom);
@@ -123,6 +125,8 @@
             
             [view measureViewWithWidth:childWidth andHeight:childHeight];
             totalWidth += (view.layoutSpec.margin.left + view.measuredSize.width + view.layoutSpec.margin.right);
+            
+            maxHeight = MAX(maxHeight, view.measuredSize.height + view.layoutSpec.margin.top + view.layoutSpec.margin.bottom);
         }
         
         totalWidth += (self.layoutSpec.padding.left + self.layoutSpec.padding.right);

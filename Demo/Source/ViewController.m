@@ -76,7 +76,7 @@
     
     MJGLKLinearLayout *hLinearLayout = [[MJGLKLinearLayout alloc] initWithOrientation:MJGLKLinearLayoutOrientationHorizontal views:[NSArray arrayWithObjects:frameLayout, filler2, nil]];
     hLinearLayout.view.backgroundColor = [UIColor greenColor];
-    hLinearLayout.layoutSpec = MJGLKLayoutSpecMake(MJGLKSizeFillParent, MJGLKSizeFillParent, 1.0f, UIEdgeInsetsMake(5.0f, 5.0f, 5.0f, 5.0f), UIEdgeInsetsMake(5.0f, 5.0f, 5.0f, 5.0f));
+    hLinearLayout.layoutSpec = MJGLKLayoutSpecMake(MJGLKSizeWrapContent, MJGLKSizeWrapContent, 0.0f, UIEdgeInsetsMake(5.0f, 5.0f, 5.0f, 5.0f), UIEdgeInsetsMake(5.0f, 5.0f, 5.0f, 5.0f));
     
     MJGLKLinearLayout *vLinearLayout = [[MJGLKLinearLayout alloc] initWithOrientation:MJGLKLinearLayoutOrientationVertical views:[NSArray arrayWithObjects:self.image, hLinearLayout, nil]];
     vLinearLayout.layoutSpec = MJGLKLayoutSpecMake(MJGLKSizeFillParent, MJGLKSizeFillParent, 1.0f, UIEdgeInsetsZero, UIEdgeInsetsZero);

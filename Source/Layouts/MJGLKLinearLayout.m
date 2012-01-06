@@ -186,7 +186,6 @@
                                          currentY, 
                                          view.measuredSize.width, 
                                          view.measuredSize.height);
-            NSLog(@"view.view.frame = %@", NSStringFromCGRect(view.view.frame));
             [view layoutView];
             currentY += (view.measuredSize.height + view.layoutSpec.margin.bottom);
         }
@@ -201,7 +200,6 @@
                                          currentY + view.layoutSpec.margin.top, 
                                          view.measuredSize.width, 
                                          view.measuredSize.height);
-            NSLog(@"view.view.frame = %@", NSStringFromCGRect(view.view.frame));
             [view layoutView];
             currentX += (view.measuredSize.width + view.layoutSpec.margin.right);
         }

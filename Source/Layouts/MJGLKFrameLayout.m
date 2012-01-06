@@ -41,12 +41,12 @@
     CGFloat maxHeight = 0.0f;
     
     for (MJGLKView *view in self.views) {
-        MJGLKDimension childWidth = [self childDimensionFromParentDimension:width 
-                                                                withPadding:(self.layoutSpec.padding.left + self.layoutSpec.padding.right + view.layoutSpec.margin.left + view.layoutSpec.margin.right) 
-                                                              withChildSize:view.layoutSpec.width];
-        MJGLKDimension childHeight = [self childDimensionFromParentDimension:height 
-                                                                 withPadding:(self.layoutSpec.padding.top + self.layoutSpec.padding.bottom + view.layoutSpec.margin.top + view.layoutSpec.margin.bottom) 
-                                                               withChildSize:view.layoutSpec.height];
+        MJGLKDimension childWidth = [self _childDimensionFromParentDimension:width 
+                                                                 withPadding:(self.layoutSpec.padding.left + self.layoutSpec.padding.right + view.layoutSpec.margin.left + view.layoutSpec.margin.right) 
+                                                               withChildSize:view.layoutSpec.width];
+        MJGLKDimension childHeight = [self _childDimensionFromParentDimension:height 
+                                                                  withPadding:(self.layoutSpec.padding.top + self.layoutSpec.padding.bottom + view.layoutSpec.margin.top + view.layoutSpec.margin.bottom) 
+                                                                withChildSize:view.layoutSpec.height];
         
         [view measureViewWithWidth:childWidth andHeight:childHeight];
         maxHeight = MAX(maxHeight, view.measuredSize.height + view.layoutSpec.margin.top + view.layoutSpec.margin.bottom);
@@ -59,18 +59,18 @@
             if (view.layoutSpec.width == MJGLKSizeFillParent) {
                 childWidth = MJGLKDimensionMake(maxWidth, MJGLKSizeConstraintExact);
             } else {
-                childWidth = [self childDimensionFromParentDimension:width 
-                                                         withPadding:(self.layoutSpec.padding.left + self.layoutSpec.padding.right + view.layoutSpec.margin.left + view.layoutSpec.margin.right) 
-                                                       withChildSize:view.layoutSpec.width];
+                childWidth = [self _childDimensionFromParentDimension:width 
+                                                          withPadding:(self.layoutSpec.padding.left + self.layoutSpec.padding.right + view.layoutSpec.margin.left + view.layoutSpec.margin.right) 
+                                                        withChildSize:view.layoutSpec.width];
             }
             
             MJGLKDimension childHeight;
             if (view.layoutSpec.width == MJGLKSizeFillParent) {
                 childHeight = MJGLKDimensionMake(maxHeight, MJGLKSizeConstraintExact);
             } else {
-                childHeight = [self childDimensionFromParentDimension:height 
-                                                          withPadding:(self.layoutSpec.padding.top + self.layoutSpec.padding.bottom + view.layoutSpec.margin.top + view.layoutSpec.margin.bottom) 
-                                                        withChildSize:view.layoutSpec.height];
+                childHeight = [self _childDimensionFromParentDimension:height 
+                                                           withPadding:(self.layoutSpec.padding.top + self.layoutSpec.padding.bottom + view.layoutSpec.margin.top + view.layoutSpec.margin.bottom) 
+                                                         withChildSize:view.layoutSpec.height];
             }
             
             [view measureViewWithWidth:childWidth andHeight:childHeight];

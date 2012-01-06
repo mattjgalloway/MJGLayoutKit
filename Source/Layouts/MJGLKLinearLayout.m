@@ -51,12 +51,12 @@
                 totalWeight += view.layoutSpec.weight;
             }
             
-            MJGLKDimension childWidth = [self childDimensionFromParentDimension:width 
-                                                                    withPadding:(self.layoutSpec.padding.left + self.layoutSpec.padding.right + view.layoutSpec.margin.left + view.layoutSpec.margin.right) 
-                                                                  withChildSize:view.layoutSpec.width];
-            MJGLKDimension childHeight = [self childDimensionFromParentDimension:height 
-                                                                     withPadding:(self.layoutSpec.padding.top + self.layoutSpec.padding.bottom + view.layoutSpec.margin.top + view.layoutSpec.margin.bottom) 
-                                                                   withChildSize:view.layoutSpec.height];
+            MJGLKDimension childWidth = [self _childDimensionFromParentDimension:width 
+                                                                     withPadding:(self.layoutSpec.padding.left + self.layoutSpec.padding.right + view.layoutSpec.margin.left + view.layoutSpec.margin.right) 
+                                                                   withChildSize:view.layoutSpec.width];
+            MJGLKDimension childHeight = [self _childDimensionFromParentDimension:height 
+                                                                      withPadding:(self.layoutSpec.padding.top + self.layoutSpec.padding.bottom + view.layoutSpec.margin.top + view.layoutSpec.margin.bottom) 
+                                                                    withChildSize:view.layoutSpec.height];
             
             [view measureViewWithWidth:childWidth andHeight:childHeight];
             totalHeight += (view.layoutSpec.margin.top + view.measuredSize.height + view.layoutSpec.margin.bottom);
@@ -78,9 +78,9 @@
                 if (view.layoutSpec.weight > 0) {
                     CGFloat thisShare = floorf(((view.layoutSpec.weight * delta) / totalWeight));
                     
-                    MJGLKDimension childWidth = [self childDimensionFromParentDimension:width 
-                                                                            withPadding:(self.layoutSpec.padding.left + self.layoutSpec.padding.right + view.layoutSpec.margin.left + view.layoutSpec.margin.right) 
-                                                                          withChildSize:view.layoutSpec.width];
+                    MJGLKDimension childWidth = [self _childDimensionFromParentDimension:width 
+                                                                             withPadding:(self.layoutSpec.padding.left + self.layoutSpec.padding.right + view.layoutSpec.margin.left + view.layoutSpec.margin.right) 
+                                                                           withChildSize:view.layoutSpec.width];
                     MJGLKDimension childHeight = MJGLKDimensionMake((NSInteger)(view.measuredSize.height + thisShare), MJGLKSizeConstraintExact);
                     [view measureViewWithWidth:childWidth andHeight:childHeight];
                 }
@@ -116,12 +116,12 @@
                 totalWeight += view.layoutSpec.weight;
             }
             
-            MJGLKDimension childWidth = [self childDimensionFromParentDimension:width 
-                                                                    withPadding:(self.layoutSpec.padding.left + self.layoutSpec.padding.right + view.layoutSpec.margin.left + view.layoutSpec.margin.right) 
-                                                                  withChildSize:view.layoutSpec.width];
-            MJGLKDimension childHeight = [self childDimensionFromParentDimension:height 
-                                                                     withPadding:(self.layoutSpec.padding.top + self.layoutSpec.padding.bottom + view.layoutSpec.margin.top + view.layoutSpec.margin.bottom) 
-                                                                   withChildSize:view.layoutSpec.height];
+            MJGLKDimension childWidth = [self _childDimensionFromParentDimension:width 
+                                                                     withPadding:(self.layoutSpec.padding.left + self.layoutSpec.padding.right + view.layoutSpec.margin.left + view.layoutSpec.margin.right) 
+                                                                   withChildSize:view.layoutSpec.width];
+            MJGLKDimension childHeight = [self _childDimensionFromParentDimension:height 
+                                                                      withPadding:(self.layoutSpec.padding.top + self.layoutSpec.padding.bottom + view.layoutSpec.margin.top + view.layoutSpec.margin.bottom) 
+                                                                    withChildSize:view.layoutSpec.height];
             
             [view measureViewWithWidth:childWidth andHeight:childHeight];
             totalWidth += (view.layoutSpec.margin.left + view.measuredSize.width + view.layoutSpec.margin.right);
@@ -143,9 +143,9 @@
                 if (view.layoutSpec.weight > 0) {
                     CGFloat thisShare = floorf(((view.layoutSpec.weight * delta) / totalWeight));
                     
-                    MJGLKDimension childHeight = [self childDimensionFromParentDimension:height 
-                                                                             withPadding:(self.layoutSpec.padding.top + self.layoutSpec.padding.bottom + view.layoutSpec.margin.top + view.layoutSpec.margin.bottom) 
-                                                                           withChildSize:view.layoutSpec.height];
+                    MJGLKDimension childHeight = [self _childDimensionFromParentDimension:height 
+                                                                              withPadding:(self.layoutSpec.padding.top + self.layoutSpec.padding.bottom + view.layoutSpec.margin.top + view.layoutSpec.margin.bottom) 
+                                                                            withChildSize:view.layoutSpec.height];
                     MJGLKDimension childWidth = MJGLKDimensionMake((NSInteger)(view.measuredSize.width + thisShare), MJGLKSizeConstraintExact);
                     [view measureViewWithWidth:childWidth andHeight:childHeight];
                 }

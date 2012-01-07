@@ -204,6 +204,8 @@
 				C952364C14B8BE2C00B880D3 /* MJGLKFrameLayout.m */,
 				C952364D14B8BE2C00B880D3 /* MJGLKLinearLayout.h */,
 				C952364E14B8BE2C00B880D3 /* MJGLKLinearLayout.m */,
+				C952365014B8BE2C00B880D3 /* MJGLKScrollLayout.h */,
+				C952365114B8BE2C00B880D3 /* MJGLKScrollLayout.m */,
 			);
 			path = Layouts;
 			sourceTree = "<group>";
@@ -211,8 +213,6 @@
 		C952364F14B8BE2C00B880D3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C952365014B8BE2C00B880D3 /* MJGLKScrollLayout.h */,
-				C952365114B8BE2C00B880D3 /* MJGLKScrollLayout.m */,
 				C952365214B8BE2C00B880D3 /* MJGLKUIViewWrapper.h */,
 				C952365314B8BE2C00B880D3 /* MJGLKUIViewWrapper.m */,
 			);

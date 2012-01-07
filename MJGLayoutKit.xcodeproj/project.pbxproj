@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C95235CC14B8717C00B880D3 /* MJGLKScrollLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = C95235CA14B8717C00B880D3 /* MJGLKScrollLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C95235CD14B8717C00B880D3 /* MJGLKScrollLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C95235CB14B8717C00B880D3 /* MJGLKScrollLayout.m */; };
 		C9DE3ED014B6070F0043D446 /* MJGLayoutKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C9DE3EB914B6070F0043D446 /* MJGLayoutKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9DE3ED114B6070F0043D446 /* MJGLKBase.h in Headers */ = {isa = PBXBuildFile; fileRef = C9DE3EBA14B6070F0043D446 /* MJGLKBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9DE3ED214B6070F0043D446 /* MJGLKDataStructures.h in Headers */ = {isa = PBXBuildFile; fileRef = C9DE3EBB14B6070F0043D446 /* MJGLKDataStructures.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -30,6 +32,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C95235CA14B8717C00B880D3 /* MJGLKScrollLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MJGLKScrollLayout.h; path = ../Views/MJGLKScrollLayout.h; sourceTree = "<group>"; };
+		C95235CB14B8717C00B880D3 /* MJGLKScrollLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MJGLKScrollLayout.m; path = ../Views/MJGLKScrollLayout.m; sourceTree = "<group>"; };
 		C998ACC314B3B6DE00C5A277 /* MJGLayoutKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MJGLayoutKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C998ACC714B3B6DE00C5A277 /* MJGLayoutKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MJGLayoutKit-Info.plist"; sourceTree = "<group>"; };
 		C998ACCB14B3B6DE00C5A277 /* MJGLayoutKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MJGLayoutKit-Prefix.pch"; sourceTree = "<group>"; };
@@ -160,6 +164,8 @@
 				C9DE3ECA14B6070F0043D446 /* MJGLKFrameLayout.m */,
 				C9DE3ECB14B6070F0043D446 /* MJGLKLinearLayout.h */,
 				C9DE3ECC14B6070F0043D446 /* MJGLKLinearLayout.m */,
+				C95235CA14B8717C00B880D3 /* MJGLKScrollLayout.h */,
+				C95235CB14B8717C00B880D3 /* MJGLKScrollLayout.m */,
 			);
 			path = Layouts;
 			sourceTree = "<group>";
@@ -188,6 +194,7 @@
 				C9DE3ED814B6070F0043D446 /* MJGLKView.h in Headers */,
 				C9DE3EDE14B6070F0043D446 /* MJGLKFrameLayout.h in Headers */,
 				C9DE3EE014B6070F0043D446 /* MJGLKLinearLayout.h in Headers */,
+				C95235CC14B8717C00B880D3 /* MJGLKScrollLayout.h in Headers */,
 				C9DE3EE214B6070F0043D446 /* MJGLKUIViewWrapper.h in Headers */,
 				C9DE3EDA14B6070F0043D446 /* MJGLKLayout+Private.h in Headers */,
 				C9DE3EDC14B6070F0043D446 /* MJGLKView+Private.h in Headers */,
@@ -295,6 +302,7 @@
 				C9DE3EDF14B6070F0043D446 /* MJGLKFrameLayout.m in Sources */,
 				C9DE3EE114B6070F0043D446 /* MJGLKLinearLayout.m in Sources */,
 				C9DE3EE314B6070F0043D446 /* MJGLKUIViewWrapper.m in Sources */,
+				C95235CD14B8717C00B880D3 /* MJGLKScrollLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

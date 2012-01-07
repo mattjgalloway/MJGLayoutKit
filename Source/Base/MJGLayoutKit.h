@@ -15,6 +15,7 @@
 #import <MJGLayoutKit/MJGLKLayout.h>
 #import <MJGLayoutKit/MJGLKFrameLayout.h>
 #import <MJGLayoutKit/MJGLKLinearLayout.h>
+#import <MJGLayoutKit/MJGLKScrollLayout.h>
 
 #import <MJGLayoutKit/MJGLKUIViewWrapper.h>
 #import <MJGLayoutKit/MJGLKUIViewWrapperDelegate.h>

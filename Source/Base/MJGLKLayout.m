@@ -48,6 +48,9 @@
 
 - (void)setNeedsLayout {
     [super setNeedsLayout];
+    if (self.layout) {
+        [self.layout setNeedsLayout];
+    }
     if (self.rootView) {
         [self.rootView setNeedsLayout];
     }

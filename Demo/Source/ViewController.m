@@ -72,7 +72,7 @@
     filler4.layoutSpec = MJGLKLayoutSpecMake(20, 800, 0.0f, UIEdgeInsetsZero, UIEdgeInsetsZero);
     
     MJGLKFrameLayout *frameLayout = [[MJGLKFrameLayout alloc] initWithViews:[NSArray arrayWithObjects:filler1, filler3, filler4, nil]];
-    frameLayout.layoutSpec = MJGLKLayoutSpecMake(MJGLKSizeWrapContent, MJGLKSizeWrapContent, 0.0f, UIEdgeInsetsZero, UIEdgeInsetsZero);
+    frameLayout.layoutSpec = MJGLKLayoutSpecMake(MJGLKSizeFillParent, MJGLKSizeWrapContent, 0.0f, UIEdgeInsetsZero, UIEdgeInsetsZero);
     
     MJGLKScrollLayout *scrollLayout = [[MJGLKScrollLayout alloc] initWithView:frameLayout];
     scrollLayout.layoutSpec = MJGLKLayoutSpecMake(MJGLKSizeFillParent, MJGLKSizeFillParent, 1.0f, UIEdgeInsetsZero, UIEdgeInsetsZero);

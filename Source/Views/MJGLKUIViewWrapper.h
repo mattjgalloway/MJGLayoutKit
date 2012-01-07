@@ -7,11 +7,9 @@
 //
 
 #import "MJGLKView.h"
-#import "MJGLKBase.h"
 
 #import <UIKit/UIKit.h>
 
-MJGLK_EXTERN
 @interface MJGLKUIViewWrapper : MJGLKView
 
 @property (nonatomic, strong) UIView *uiView;

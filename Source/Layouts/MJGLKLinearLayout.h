@@ -7,14 +7,12 @@
 //
 
 #import "MJGLKLayout.h"
-#import "MJGLKBase.h"
 
 typedef enum {
     MJGLKLinearLayoutOrientationHorizontal = 1,
     MJGLKLinearLayoutOrientationVertical,
 } MJGLKLinearLayoutOrientation;
 
-MJGLK_EXTERN
 @interface MJGLKLinearLayout : MJGLKLayout
 
 @property (nonatomic, assign, readonly) MJGLKLinearLayoutOrientation orientation;

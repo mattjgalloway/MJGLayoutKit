@@ -7,11 +7,9 @@
 //
 
 #import "MJGLKLayout.h"
-#import "MJGLKBase.h"
 
 #import <UIKit/UIKit.h>
 
-MJGLK_EXTERN
 @interface MJGLKScrollLayout : MJGLKLayout
 
 - (id)initWithView:(MJGLKView*)view;

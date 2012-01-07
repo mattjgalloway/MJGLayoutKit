@@ -8,11 +8,8 @@
 
 #import "MJGLKView.h"
 
-#import "MJGLKBase.h"
-
 @class MJGLKRootView;
 
-MJGLK_EXTERN
 @interface MJGLKLayout : MJGLKView
 
 @property (nonatomic, unsafe_unretained, readonly) MJGLKRootView *rootView;

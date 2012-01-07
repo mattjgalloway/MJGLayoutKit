@@ -6,8 +6,6 @@
 //  Copyright (c) 2012 Matt Galloway. All rights reserved.
 //
 
-#import "MJGLKBase.h"
-
 #import <Foundation/Foundation.h>
 
 #define MJGLKSizeFillParent  ((NSInteger)-1)
@@ -23,9 +21,9 @@ typedef struct {
     UIEdgeInsets padding;
 } MJGLKLayoutSpec;
 
-MJGLK_EXTERN const MJGLKLayoutSpec MJGLKLayoutSpecZero;
+extern const MJGLKLayoutSpec MJGLKLayoutSpecZero;
 
-MJGLK_STATIC_INLINE MJGLKLayoutSpec MJGLKLayoutSpecMake(NSInteger width, NSInteger height, CGFloat weight, UIEdgeInsets margin, UIEdgeInsets padding) {
+static inline MJGLKLayoutSpec MJGLKLayoutSpecMake(NSInteger width, NSInteger height, CGFloat weight, UIEdgeInsets margin, UIEdgeInsets padding) {
     MJGLKLayoutSpec layoutSpec;
     layoutSpec.width = width;
     layoutSpec.height = height;
@@ -35,7 +33,7 @@ MJGLK_STATIC_INLINE MJGLKLayoutSpec MJGLKLayoutSpecMake(NSInteger width, NSInteg
     return layoutSpec;
 }
 
-MJGLK_EXTERN NSString* NSStringFromMJGLKLayoutSpec(MJGLKLayoutSpec layoutSpec);
+extern NSString* NSStringFromMJGLKLayoutSpec(MJGLKLayoutSpec layoutSpec);
 
 
 /* Dimension constraint types */
@@ -59,16 +57,16 @@ typedef struct {
     MJGLKDimension height;
 } MJGLKDimension2D;
 
-MJGLK_EXTERN const MJGLKDimension MJGLKDimensionZero;
+extern const MJGLKDimension MJGLKDimensionZero;
 
-MJGLK_STATIC_INLINE MJGLKDimension MJGLKDimensionMake(NSInteger size, MJGLKSizeConstraint constraint) {
+static inline MJGLKDimension MJGLKDimensionMake(NSInteger size, MJGLKSizeConstraint constraint) {
     MJGLKDimension dimension;
     dimension.size = size;
     dimension.constraint = constraint;
     return dimension;
 }
 
-MJGLK_EXTERN NSString* NSStringFromMJGLKDimension(MJGLKDimension dimension);
-MJGLK_EXTERN NSString* NSStringFromMJGLKDimension2D(MJGLKDimension2D dimensions);
+extern NSString* NSStringFromMJGLKDimension(MJGLKDimension dimension);
+extern NSString* NSStringFromMJGLKDimension2D(MJGLKDimension2D dimensions);
 
-MJGLK_EXTERN CGFloat ReconcileSizeWithDimension(CGFloat size, MJGLKDimension dimension);
+extern CGFloat ReconcileSizeWithDimension(CGFloat size, MJGLKDimension dimension);

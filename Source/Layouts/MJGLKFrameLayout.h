@@ -7,9 +7,7 @@
 //
 
 #import "MJGLKLayout.h"
-#import "MJGLKBase.h"
 
-MJGLK_EXTERN
 @interface MJGLKFrameLayout : MJGLKLayout
 
 - (id)initWithViews:(NSArray*)views;

@@ -8,12 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-#import "MJGLKBase.h"
 #import "MJGLKDataStructures.h"
 
 @class MJGLKLayout;
 
-MJGLK_EXTERN
 @interface MJGLKView : NSObject
 
 @property (nonatomic, assign) MJGLKLayoutSpec layoutSpec;

@@ -6,8 +6,7 @@
 //  Copyright (c) 2012 Matt Galloway. All rights reserved.
 //
 
-#import "MJGLKLayout.h"
-
+#import <MJGLayoutKit/MJGLKLayout.h>
 #import <MJGLayoutKit/MJGLKBase.h>
 
 typedef enum {

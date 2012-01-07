@@ -316,6 +316,7 @@
 				ARCHS = (
 					armv6,
 					armv7,
+					i386,
 				);
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
@@ -343,6 +344,7 @@
 				ARCHS = (
 					armv6,
 					armv7,
+					i386,
 				);
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;

@@ -18,4 +18,3 @@
 #import <MJGLayoutKit/MJGLKScrollLayout.h>
 
 #import <MJGLayoutKit/MJGLKUIViewWrapper.h>
-#import <MJGLayoutKit/MJGLKUIViewWrapperDelegate.h>

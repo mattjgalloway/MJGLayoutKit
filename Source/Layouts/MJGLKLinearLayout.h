@@ -6,8 +6,8 @@
 //  Copyright (c) 2012 Matt Galloway. All rights reserved.
 //
 
-#import <MJGLayoutKit/MJGLKLayout.h>
-#import <MJGLayoutKit/MJGLKBase.h>
+#import "MJGLKLayout.h"
+#import "MJGLKBase.h"
 
 typedef enum {
     MJGLKLinearLayoutOrientationHorizontal = 1,

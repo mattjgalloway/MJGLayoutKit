@@ -13,7 +13,16 @@
 		C91BFDD714B3ACA700F00F47 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C91BFDD614B3ACA700F00F47 /* main.m */; };
 		C91BFDF814B3AD4600F00F47 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C91BFDF314B3AD4600F00F47 /* AppDelegate.m */; };
 		C91BFDF914B3AD4600F00F47 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C91BFDF514B3AD4600F00F47 /* ViewController.m */; };
-		C998ACE314B3B84B00C5A277 /* MJGLayoutKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C998ACE214B3B84B00C5A277 /* MJGLayoutKit.framework */; };
+		C952365414B8BE2C00B880D3 /* MJGLKDataStructures.m in Sources */ = {isa = PBXBuildFile; fileRef = C952363E14B8BE2C00B880D3 /* MJGLKDataStructures.m */; };
+		C952365514B8BE2C00B880D3 /* MJGLKLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C952364014B8BE2C00B880D3 /* MJGLKLayout.m */; };
+		C952365614B8BE2C00B880D3 /* MJGLKRootView.m in Sources */ = {isa = PBXBuildFile; fileRef = C952364214B8BE2C00B880D3 /* MJGLKRootView.m */; };
+		C952365714B8BE2C00B880D3 /* MJGLKView.m in Sources */ = {isa = PBXBuildFile; fileRef = C952364414B8BE2C00B880D3 /* MJGLKView.m */; };
+		C952365814B8BE2C00B880D3 /* MJGLKLayout+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = C952364714B8BE2C00B880D3 /* MJGLKLayout+Private.m */; };
+		C952365914B8BE2C00B880D3 /* MJGLKView+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = C952364914B8BE2C00B880D3 /* MJGLKView+Private.m */; };
+		C952365A14B8BE2C00B880D3 /* MJGLKFrameLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C952364C14B8BE2C00B880D3 /* MJGLKFrameLayout.m */; };
+		C952365B14B8BE2C00B880D3 /* MJGLKLinearLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C952364E14B8BE2C00B880D3 /* MJGLKLinearLayout.m */; };
+		C952365C14B8BE2C00B880D3 /* MJGLKScrollLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C952365114B8BE2C00B880D3 /* MJGLKScrollLayout.m */; };
+		C952365D14B8BE2C00B880D3 /* MJGLKUIViewWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C952365314B8BE2C00B880D3 /* MJGLKUIViewWrapper.m */; };
 		C9DE3E4814B5AEFE0043D446 /* BeerMap_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C9DE3E4414B5AEFE0043D446 /* BeerMap_Logo.png */; };
 		C9DE3E4914B5AEFE0043D446 /* ViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9DE3E4614B5AEFE0043D446 /* ViewController~ipad.xib */; };
 		C9DE3E4A14B5AEFE0043D446 /* ViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9DE3E4714B5AEFE0043D446 /* ViewController~iphone.xib */; };
@@ -32,7 +41,28 @@
 		C91BFDF314B3AD4600F00F47 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C91BFDF414B3AD4600F00F47 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C91BFDF514B3AD4600F00F47 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		C998ACE214B3B84B00C5A277 /* MJGLayoutKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MJGLayoutKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C952363B14B8BE2C00B880D3 /* MJGLayoutKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGLayoutKit.h; sourceTree = "<group>"; };
+		C952363C14B8BE2C00B880D3 /* MJGLKBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGLKBase.h; sourceTree = "<group>"; };
+		C952363D14B8BE2C00B880D3 /* MJGLKDataStructures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGLKDataStructures.h; sourceTree = "<group>"; };
+		C952363E14B8BE2C00B880D3 /* MJGLKDataStructures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGLKDataStructures.m; sourceTree = "<group>"; };
+		C952363F14B8BE2C00B880D3 /* MJGLKLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGLKLayout.h; sourceTree = "<group>"; };
+		C952364014B8BE2C00B880D3 /* MJGLKLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGLKLayout.m; sourceTree = "<group>"; };
+		C952364114B8BE2C00B880D3 /* MJGLKRootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGLKRootView.h; sourceTree = "<group>"; };
+		C952364214B8BE2C00B880D3 /* MJGLKRootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGLKRootView.m; sourceTree = "<group>"; };
+		C952364314B8BE2C00B880D3 /* MJGLKView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGLKView.h; sourceTree = "<group>"; };
+		C952364414B8BE2C00B880D3 /* MJGLKView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGLKView.m; sourceTree = "<group>"; };
+		C952364614B8BE2C00B880D3 /* MJGLKLayout+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MJGLKLayout+Private.h"; sourceTree = "<group>"; };
+		C952364714B8BE2C00B880D3 /* MJGLKLayout+Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MJGLKLayout+Private.m"; sourceTree = "<group>"; };
+		C952364814B8BE2C00B880D3 /* MJGLKView+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MJGLKView+Private.h"; sourceTree = "<group>"; };
+		C952364914B8BE2C00B880D3 /* MJGLKView+Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MJGLKView+Private.m"; sourceTree = "<group>"; };
+		C952364B14B8BE2C00B880D3 /* MJGLKFrameLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGLKFrameLayout.h; sourceTree = "<group>"; };
+		C952364C14B8BE2C00B880D3 /* MJGLKFrameLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGLKFrameLayout.m; sourceTree = "<group>"; };
+		C952364D14B8BE2C00B880D3 /* MJGLKLinearLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGLKLinearLayout.h; sourceTree = "<group>"; };
+		C952364E14B8BE2C00B880D3 /* MJGLKLinearLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGLKLinearLayout.m; sourceTree = "<group>"; };
+		C952365014B8BE2C00B880D3 /* MJGLKScrollLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGLKScrollLayout.h; sourceTree = "<group>"; };
+		C952365114B8BE2C00B880D3 /* MJGLKScrollLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGLKScrollLayout.m; sourceTree = "<group>"; };
+		C952365214B8BE2C00B880D3 /* MJGLKUIViewWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGLKUIViewWrapper.h; sourceTree = "<group>"; };
+		C952365314B8BE2C00B880D3 /* MJGLKUIViewWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGLKUIViewWrapper.m; sourceTree = "<group>"; };
 		C9DE3E4414B5AEFE0043D446 /* BeerMap_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BeerMap_Logo.png; sourceTree = "<group>"; };
 		C9DE3E4614B5AEFE0043D446 /* ViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "ViewController~ipad.xib"; sourceTree = "<group>"; };
 		C9DE3E4714B5AEFE0043D446 /* ViewController~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "ViewController~iphone.xib"; sourceTree = "<group>"; };
@@ -47,7 +77,6 @@
 				C91BFDCB14B3ACA700F00F47 /* UIKit.framework in Frameworks */,
 				C91BFDCD14B3ACA700F00F47 /* Foundation.framework in Frameworks */,
 				C91BFDCF14B3ACA700F00F47 /* CoreGraphics.framework in Frameworks */,
-				C998ACE314B3B84B00C5A277 /* MJGLayoutKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +86,7 @@
 		C91BFDBB14B3ACA700F00F47 = {
 			isa = PBXGroup;
 			children = (
+				C952363814B8BE1000B880D3 /* MJGLayoutKit */,
 				C91BFDD014B3ACA700F00F47 /* MJGLayoutKitDemo */,
 				C91BFDC914B3ACA700F00F47 /* Frameworks */,
 				C91BFDC714B3ACA700F00F47 /* Products */,
@@ -77,7 +107,6 @@
 				C91BFDCA14B3ACA700F00F47 /* UIKit.framework */,
 				C91BFDCC14B3ACA700F00F47 /* Foundation.framework */,
 				C91BFDCE14B3ACA700F00F47 /* CoreGraphics.framework */,
-				C998ACE214B3B84B00C5A277 /* MJGLayoutKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -121,6 +150,76 @@
 			);
 			path = Source;
 			sourceTree = SOURCE_ROOT;
+		};
+		C952363814B8BE1000B880D3 /* MJGLayoutKit */ = {
+			isa = PBXGroup;
+			children = (
+				C952363914B8BE2C00B880D3 /* Source */,
+			);
+			name = MJGLayoutKit;
+			path = ..;
+			sourceTree = SOURCE_ROOT;
+		};
+		C952363914B8BE2C00B880D3 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C952363A14B8BE2C00B880D3 /* Base */,
+				C952364514B8BE2C00B880D3 /* Internal */,
+				C952364A14B8BE2C00B880D3 /* Layouts */,
+				C952364F14B8BE2C00B880D3 /* Views */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		C952363A14B8BE2C00B880D3 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				C952363B14B8BE2C00B880D3 /* MJGLayoutKit.h */,
+				C952363C14B8BE2C00B880D3 /* MJGLKBase.h */,
+				C952363D14B8BE2C00B880D3 /* MJGLKDataStructures.h */,
+				C952363E14B8BE2C00B880D3 /* MJGLKDataStructures.m */,
+				C952363F14B8BE2C00B880D3 /* MJGLKLayout.h */,
+				C952364014B8BE2C00B880D3 /* MJGLKLayout.m */,
+				C952364114B8BE2C00B880D3 /* MJGLKRootView.h */,
+				C952364214B8BE2C00B880D3 /* MJGLKRootView.m */,
+				C952364314B8BE2C00B880D3 /* MJGLKView.h */,
+				C952364414B8BE2C00B880D3 /* MJGLKView.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		C952364514B8BE2C00B880D3 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				C952364614B8BE2C00B880D3 /* MJGLKLayout+Private.h */,
+				C952364714B8BE2C00B880D3 /* MJGLKLayout+Private.m */,
+				C952364814B8BE2C00B880D3 /* MJGLKView+Private.h */,
+				C952364914B8BE2C00B880D3 /* MJGLKView+Private.m */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		C952364A14B8BE2C00B880D3 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				C952364B14B8BE2C00B880D3 /* MJGLKFrameLayout.h */,
+				C952364C14B8BE2C00B880D3 /* MJGLKFrameLayout.m */,
+				C952364D14B8BE2C00B880D3 /* MJGLKLinearLayout.h */,
+				C952364E14B8BE2C00B880D3 /* MJGLKLinearLayout.m */,
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
+		C952364F14B8BE2C00B880D3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C952365014B8BE2C00B880D3 /* MJGLKScrollLayout.h */,
+				C952365114B8BE2C00B880D3 /* MJGLKScrollLayout.m */,
+				C952365214B8BE2C00B880D3 /* MJGLKUIViewWrapper.h */,
+				C952365314B8BE2C00B880D3 /* MJGLKUIViewWrapper.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
 		};
 		C9DE3E4314B5AEFE0043D446 /* Graphics */ = {
 			isa = PBXGroup;
@@ -207,6 +306,16 @@
 				C91BFDD714B3ACA700F00F47 /* main.m in Sources */,
 				C91BFDF814B3AD4600F00F47 /* AppDelegate.m in Sources */,
 				C91BFDF914B3AD4600F00F47 /* ViewController.m in Sources */,
+				C952365414B8BE2C00B880D3 /* MJGLKDataStructures.m in Sources */,
+				C952365514B8BE2C00B880D3 /* MJGLKLayout.m in Sources */,
+				C952365614B8BE2C00B880D3 /* MJGLKRootView.m in Sources */,
+				C952365714B8BE2C00B880D3 /* MJGLKView.m in Sources */,
+				C952365814B8BE2C00B880D3 /* MJGLKLayout+Private.m in Sources */,
+				C952365914B8BE2C00B880D3 /* MJGLKView+Private.m in Sources */,
+				C952365A14B8BE2C00B880D3 /* MJGLKFrameLayout.m in Sources */,
+				C952365B14B8BE2C00B880D3 /* MJGLKLinearLayout.m in Sources */,
+				C952365C14B8BE2C00B880D3 /* MJGLKScrollLayout.m in Sources */,
+				C952365D14B8BE2C00B880D3 /* MJGLKUIViewWrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,10 +372,7 @@
 		C91BFDE814B3ACA700F00F47 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../../../../Library/Developer/Xcode/DerivedData/MJGLayoutKitDemo-hdihmbhoumhcwsgszhcsmqdudwia/Build/Products/Debug-iphoneos\"",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MJGLayoutKitDemo-Prefix.pch";
 				INFOPLIST_FILE = "MJGLayoutKitDemo-Info.plist";
@@ -278,10 +384,7 @@
 		C91BFDE914B3ACA700F00F47 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../../../../Library/Developer/Xcode/DerivedData/MJGLayoutKitDemo-hdihmbhoumhcwsgszhcsmqdudwia/Build/Products/Debug-iphoneos\"",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MJGLayoutKitDemo-Prefix.pch";
 				INFOPLIST_FILE = "MJGLayoutKitDemo-Info.plist";

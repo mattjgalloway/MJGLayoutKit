@@ -6,8 +6,8 @@
 //  Copyright (c) 2012 Matt Galloway. All rights reserved.
 //
 
-#import <MJGLayoutKit/MJGLKView.h>
-#import <MJGLayoutKit/MJGLKBase.h>
+#import "MJGLKView.h"
+#import "MJGLKBase.h"
 
 #import <UIKit/UIKit.h>
 

@@ -8,7 +8,7 @@
 
 #import "MJGLKView.h"
 
-#import <MJGLayoutKit/MJGLKBase.h>
+#import "MJGLKBase.h"
 
 @class MJGLKRootView;
 

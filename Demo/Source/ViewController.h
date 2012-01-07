@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <MJGLayoutKit/MJGLayoutKit.h>
+#import "MJGLayoutKit.h"
 
 @interface ViewController : UIViewController
 

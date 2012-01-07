@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-#import <MJGLayoutKit/MJGLKBase.h>
-#import <MJGLayoutKit/MJGLKDataStructures.h>
+#import "MJGLKBase.h"
+#import "MJGLKDataStructures.h"
 
 @class MJGLKLayout;
 

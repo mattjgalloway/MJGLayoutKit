@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 Matt Galloway. All rights reserved.
 //
 
-#import <MJGLayoutKit/MJGLKBase.h>
+#import "MJGLKBase.h"
 
 #import <Foundation/Foundation.h>
 

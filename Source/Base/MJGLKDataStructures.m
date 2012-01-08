@@ -37,6 +37,15 @@ NSString* NSStringFromMJGLKDimension2D(MJGLKDimension2D dimensions) {
     return [NSString stringWithFormat:@"{%@,%@}", NSStringFromMJGLKDimension(dimensions.width), NSStringFromMJGLKDimension(dimensions.height)];
 }
 
+BOOL MJGLKDimensionEqual(MJGLKDimension lhs, MJGLKDimension rhs) {
+    if (lhs.size == rhs.size && 
+        lhs.constraint == rhs.constraint)
+    {
+        return YES;
+    }
+    return NO;
+}
+
 CGFloat ReconcileSizeWithDimension(CGFloat size, MJGLKDimension dimension) {
     CGFloat retSize = size;
     switch (dimension.constraint) {

@@ -69,4 +69,6 @@ static inline MJGLKDimension MJGLKDimensionMake(NSInteger size, MJGLKSizeConstra
 extern NSString* NSStringFromMJGLKDimension(MJGLKDimension dimension);
 extern NSString* NSStringFromMJGLKDimension2D(MJGLKDimension2D dimensions);
 
+extern BOOL MJGLKDimensionEqual(MJGLKDimension lhs, MJGLKDimension rhs);
+
 extern CGFloat ReconcileSizeWithDimension(CGFloat size, MJGLKDimension dimension);

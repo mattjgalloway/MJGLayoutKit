@@ -15,9 +15,7 @@
 @interface MJGLKView : NSObject
 
 @property (nonatomic, assign) MJGLKLayoutSpec layoutSpec;
-
 @property (nonatomic, assign) CGSize measuredSize;
-
 @property (nonatomic, unsafe_unretained, readonly) MJGLKLayout *layout;
 
 - (void)removeFromLayout;
@@ -28,7 +26,7 @@
 /**
  * Subclasses must implement the following methods
  */
-@property (nonatomic, strong, readonly) UIView *view;
+- (UIView*)view;
 - (void)measureViewWithWidth:(MJGLKDimension)width andHeight:(MJGLKDimension)height;
 - (void)layoutView;
 

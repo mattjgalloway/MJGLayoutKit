@@ -58,7 +58,7 @@
                                                                       withPadding:(self.layoutSpec.padding.top + self.layoutSpec.padding.bottom + view.layoutSpec.margin.top + view.layoutSpec.margin.bottom) 
                                                                     withChildSize:view.layoutSpec.height];
             
-            [view measureViewWithWidth:childWidth andHeight:childHeight];
+            [view updateViewWidth:childWidth andHeight:childHeight];
             totalHeight += (view.layoutSpec.margin.top + view.measuredSize.height + view.layoutSpec.margin.bottom);
             
             maxWidth = MAX(maxWidth, view.measuredSize.width + view.layoutSpec.margin.left + view.layoutSpec.margin.right);
@@ -82,7 +82,7 @@
                                                                              withPadding:(self.layoutSpec.padding.left + self.layoutSpec.padding.right + view.layoutSpec.margin.left + view.layoutSpec.margin.right) 
                                                                            withChildSize:view.layoutSpec.width];
                     MJGLKDimension childHeight = MJGLKDimensionMake((NSInteger)(view.measuredSize.height + thisShare), MJGLKSizeConstraintExact);
-                    [view measureViewWithWidth:childWidth andHeight:childHeight];
+                    [view updateViewWidth:childWidth andHeight:childHeight];
                 }
                 
                 totalHeight += (view.layoutSpec.margin.top + view.measuredSize.height + view.layoutSpec.margin.bottom);
@@ -98,7 +98,7 @@
                 if (view.layoutSpec.width == MJGLKSizeFillParent) {
                     MJGLKDimension childWidth = MJGLKDimensionMake(maxWidth - view.layoutSpec.margin.left - view.layoutSpec.margin.right, MJGLKSizeConstraintExact);
                     MJGLKDimension childHeight = MJGLKDimensionMake((NSInteger)(view.measuredSize.height), MJGLKSizeConstraintExact);
-                    [view measureViewWithWidth:childWidth andHeight:childHeight];
+                    [view updateViewWidth:childWidth andHeight:childHeight];
                 }
             }
         }
@@ -123,7 +123,7 @@
                                                                       withPadding:(self.layoutSpec.padding.top + self.layoutSpec.padding.bottom + view.layoutSpec.margin.top + view.layoutSpec.margin.bottom) 
                                                                     withChildSize:view.layoutSpec.height];
             
-            [view measureViewWithWidth:childWidth andHeight:childHeight];
+            [view updateViewWidth:childWidth andHeight:childHeight];
             totalWidth += (view.layoutSpec.margin.left + view.measuredSize.width + view.layoutSpec.margin.right);
             
             maxHeight = MAX(maxHeight, view.measuredSize.height + view.layoutSpec.margin.top + view.layoutSpec.margin.bottom);
@@ -147,7 +147,7 @@
                                                                               withPadding:(self.layoutSpec.padding.top + self.layoutSpec.padding.bottom + view.layoutSpec.margin.top + view.layoutSpec.margin.bottom) 
                                                                             withChildSize:view.layoutSpec.height];
                     MJGLKDimension childWidth = MJGLKDimensionMake((NSInteger)(view.measuredSize.width + thisShare), MJGLKSizeConstraintExact);
-                    [view measureViewWithWidth:childWidth andHeight:childHeight];
+                    [view updateViewWidth:childWidth andHeight:childHeight];
                 }
                 
                 totalWidth += (view.layoutSpec.margin.left + view.measuredSize.width + view.layoutSpec.margin.right);
@@ -163,7 +163,7 @@
                 if (view.layoutSpec.height == MJGLKSizeFillParent) {
                     MJGLKDimension childWidth = MJGLKDimensionMake((NSInteger)(view.measuredSize.width), MJGLKSizeConstraintExact);
                     MJGLKDimension childHeight = MJGLKDimensionMake(maxHeight - view.layoutSpec.margin.top - view.layoutSpec.margin.bottom, MJGLKSizeConstraintExact);
-                    [view measureViewWithWidth:childWidth andHeight:childHeight];
+                    [view updateViewWidth:childWidth andHeight:childHeight];
                 }
             }
         }

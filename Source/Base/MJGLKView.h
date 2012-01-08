@@ -23,6 +23,8 @@
 - (void)removeFromLayout;
 - (void)setNeedsLayout;
 
+- (void)updateViewWidth:(MJGLKDimension)width andHeight:(MJGLKDimension)height;
+
 /**
  * Subclasses must implement the following methods
  */

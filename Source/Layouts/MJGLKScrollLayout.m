@@ -55,7 +55,7 @@
                                                               withPadding:(self.layoutSpec.padding.top + self.layoutSpec.padding.bottom + self.scrolledView.layoutSpec.margin.top + self.scrolledView.layoutSpec.margin.bottom) 
                                                             withChildSize:self.scrolledView.layoutSpec.height];
     
-    [self.scrolledView measureViewWithWidth:childWidth andHeight:childHeight];
+    [self.scrolledView updateViewWidth:childWidth andHeight:childHeight];
     contentWidth = self.scrolledView.measuredSize.width + self.scrolledView.layoutSpec.margin.left + self.scrolledView.layoutSpec.margin.right;
     contentHeight = self.scrolledView.measuredSize.height + self.scrolledView.layoutSpec.margin.top + self.scrolledView.layoutSpec.margin.bottom;
     
@@ -78,7 +78,7 @@
                                                      withChildSize:self.scrolledView.layoutSpec.height];
         }
         
-        [self.scrolledView measureViewWithWidth:childWidth andHeight:childHeight];
+        [self.scrolledView updateViewWidth:childWidth andHeight:childHeight];
     }
     
     contentWidth += (self.layoutSpec.padding.left + self.layoutSpec.padding.right);

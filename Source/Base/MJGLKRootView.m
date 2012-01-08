@@ -42,7 +42,7 @@
     
     MJGLKDimension width = MJGLKDimensionMake((NSInteger)(bounds.size.width - self.layout.layoutSpec.margin.left - self.layout.layoutSpec.margin.right), MJGLKSizeConstraintExact);
     MJGLKDimension height = MJGLKDimensionMake((NSInteger)(bounds.size.height - self.layout.layoutSpec.margin.top - self.layout.layoutSpec.margin.bottom), MJGLKSizeConstraintExact);
-    [self.layout measureViewWithWidth:width andHeight:height];
+    [self.layout updateViewWidth:width andHeight:height];
     
     [self.layout layoutView];
 }

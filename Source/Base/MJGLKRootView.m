@@ -37,9 +37,7 @@
 
 #pragma mark -
 
-- (void)layoutSubviews {
-    [super layoutSubviews];
-    
+- (void)reflowLayout {
     CGRect bounds = self.bounds;
     
     MJGLKDimension width = MJGLKDimensionMake((NSInteger)(bounds.size.width - self.view.layoutSpec.margin.left - self.view.layoutSpec.margin.right), MJGLKSizeConstraintExact);
@@ -49,6 +47,14 @@
     self.view.view.frame = CGRectMake(0.0f, 0.0f, self.view.measuredSize.width, self.view.measuredSize.height);
     
     [self.view layoutView];
+}
+
+
+#pragma mark -
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    [self reflowLayout];
 }
 
 @end

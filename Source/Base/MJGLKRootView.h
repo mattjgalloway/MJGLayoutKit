@@ -16,4 +16,6 @@
 
 - (id)initWithView:(MJGLKView*)view;
 
+- (void)reflowLayout;
+
 @end

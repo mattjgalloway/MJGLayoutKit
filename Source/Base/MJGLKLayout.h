@@ -8,11 +8,8 @@
 
 #import "MJGLKView.h"
 
-@class MJGLKRootView;
-
 @interface MJGLKLayout : MJGLKView
 
-@property (nonatomic, unsafe_unretained, readonly) MJGLKRootView *rootView;
 @property (nonatomic, strong, readonly) NSArray *views;
 
 - (id)initWithViews:(NSArray*)views;

@@ -84,7 +84,7 @@
     MJGLKLinearLayout *vLinearLayout = [[MJGLKLinearLayout alloc] initWithOrientation:MJGLKLinearLayoutOrientationVertical views:[NSArray arrayWithObjects:self.image, hLinearLayout, nil]];
     vLinearLayout.layoutSpec = MJGLKLayoutSpecMake(MJGLKSizeFillParent, MJGLKSizeFillParent, 1.0f, UIEdgeInsetsZero, UIEdgeInsetsZero);
     
-    self.layout = [[MJGLKRootView alloc] initWithLayout:vLinearLayout];
+    self.layout = [[MJGLKRootView alloc] initWithView:vLinearLayout];
     
     self.layout.frame = self.layoutContainer.bounds;
     [self.layoutContainer addSubview:self.layout];

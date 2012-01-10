@@ -12,17 +12,14 @@
 
 #import "MJGLKLayout.h"
 
-#import "MJGLKRootView.h"
 #import "MJGLKView+Private.h"
 
 @interface MJGLKLayout ()
-@property (nonatomic, unsafe_unretained, readwrite) MJGLKRootView *rootView;
 @property (nonatomic, strong) NSMutableArray *mutableViews;
 @end
 
 @implementation MJGLKLayout
 
-@synthesize rootView = _rootView;
 @synthesize mutableViews = _mutableViews;
 
 #pragma mark -
@@ -52,12 +49,7 @@
 
 - (void)setNeedsLayout {
     [super setNeedsLayout];
-    if (self.layout) {
-        [self.layout setNeedsLayout];
-    }
-    if (self.rootView) {
-        [self.rootView setNeedsLayout];
-    }
+    [self.layout setNeedsLayout];
 }
 
 

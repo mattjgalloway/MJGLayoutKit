@@ -14,8 +14,6 @@
 
 @implementation MJGLKLayout (Private)
 
-@dynamic rootView;
-
 - (MJGLKDimension)_childDimensionFromParentDimension:(MJGLKDimension)parentDimension withPadding:(NSInteger)padding withChildSize:(NSInteger)childSize {
     NSInteger size = 0;
     MJGLKSizeConstraint constraint = MJGLKSizeConstraintUnspecified;

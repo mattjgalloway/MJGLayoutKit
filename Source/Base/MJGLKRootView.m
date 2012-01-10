@@ -12,24 +12,24 @@
 
 #import "MJGLKRootView.h"
 
-#import "MJGLKLayout.h"
-#import "MJGLKLayout+Private.h"
+#import "MJGLKView.h"
+#import "MJGLKView+Private.h"
 
 @interface MJGLKRootView ()
-@property (nonatomic, strong, readwrite) MJGLKLayout *layout;
+@property (nonatomic, strong, readwrite) MJGLKView *view;
 @end
 
 @implementation MJGLKRootView
 
-@synthesize layout = _layout;
+@synthesize view = _view;
 
 #pragma mark -
 
-- (id)initWithLayout:(MJGLKLayout*)inLayout {
+- (id)initWithView:(MJGLKView*)inView {
     if ((self = [super initWithFrame:CGRectZero])) {
-        self.layout = inLayout;
-        self.layout.rootView = self;
-        [self addSubview:self.layout.view];
+        self.view = inView;
+        self.view.rootView = self;
+        [self addSubview:self.view.view];
     }
     return self;
 }
@@ -42,13 +42,13 @@
     
     CGRect bounds = self.bounds;
     
-    self.layout.view.frame = bounds;
+    MJGLKDimension width = MJGLKDimensionMake((NSInteger)(bounds.size.width - self.view.layoutSpec.margin.left - self.view.layoutSpec.margin.right), MJGLKSizeConstraintExact);
+    MJGLKDimension height = MJGLKDimensionMake((NSInteger)(bounds.size.height - self.view.layoutSpec.margin.top - self.view.layoutSpec.margin.bottom), MJGLKSizeConstraintExact);
+    [self.view updateViewWidth:width andHeight:height];
     
-    MJGLKDimension width = MJGLKDimensionMake((NSInteger)(bounds.size.width - self.layout.layoutSpec.margin.left - self.layout.layoutSpec.margin.right), MJGLKSizeConstraintExact);
-    MJGLKDimension height = MJGLKDimensionMake((NSInteger)(bounds.size.height - self.layout.layoutSpec.margin.top - self.layout.layoutSpec.margin.bottom), MJGLKSizeConstraintExact);
-    [self.layout updateViewWidth:width andHeight:height];
+    self.view.view.frame = CGRectMake(0.0f, 0.0f, self.view.measuredSize.width, self.view.measuredSize.height);
     
-    [self.layout layoutView];
+    [self.view layoutView];
 }
 
 @end

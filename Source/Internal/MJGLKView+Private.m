@@ -15,5 +15,6 @@
 @implementation MJGLKView (Private)
 
 @dynamic layout;
+@dynamic rootView;
 
 @end

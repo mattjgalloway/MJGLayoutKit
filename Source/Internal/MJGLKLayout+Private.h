@@ -14,8 +14,6 @@
 
 @interface MJGLKLayout (Private)
 
-@property (nonatomic, unsafe_unretained, readwrite) MJGLKRootView *rootView;
-
 - (MJGLKDimension)_childDimensionFromParentDimension:(MJGLKDimension)parentDimension withPadding:(NSInteger)padding withChildSize:(NSInteger)childSize;
 
 @end

@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@class MJGLKLayout;
+@class MJGLKView;
 
 @interface MJGLKRootView : UIView
 
-@property (nonatomic, strong, readonly) MJGLKLayout *layout;
+@property (nonatomic, strong, readonly) MJGLKView *view;
 
-- (id)initWithLayout:(MJGLKLayout*)layout;
+- (id)initWithView:(MJGLKView*)view;
 
 @end

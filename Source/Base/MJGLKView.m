@@ -13,9 +13,11 @@
 #import "MJGLKView.h"
 
 #import "MJGLKLayout.h"
+#import "MJGLKRootView.h"
 
 @interface MJGLKView ()
 @property (nonatomic, unsafe_unretained, readwrite) MJGLKLayout *layout;
+@property (nonatomic, unsafe_unretained, readwrite) MJGLKRootView *rootView;
 @property (nonatomic, assign) MJGLKDimension lastWidth;
 @property (nonatomic, assign) MJGLKDimension lastHeight;
 @property (nonatomic, assign) BOOL forceLayout;
@@ -26,6 +28,7 @@
 @synthesize layoutSpec = _layoutSpec;
 @synthesize measuredSize = _measuredSize;
 @synthesize layout = _layout;
+@synthesize rootView = _rootView;
 @synthesize lastWidth = _lastWidth;
 @synthesize lastHeight = _lastHeight;
 @synthesize forceLayout = _forceLayout;
@@ -53,6 +56,7 @@
 - (void)setNeedsLayout {
     _forceLayout = YES;
     [self.layout setNeedsLayout];
+    [self.rootView setNeedsLayout];
 }
 
 

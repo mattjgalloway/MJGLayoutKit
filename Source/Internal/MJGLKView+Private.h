@@ -15,5 +15,4 @@
 @property (nonatomic, unsafe_unretained, readwrite) MJGLKLayout *layout;
 @property (nonatomic, unsafe_unretained, readwrite) MJGLKRootView *rootView;
 
-
 @end

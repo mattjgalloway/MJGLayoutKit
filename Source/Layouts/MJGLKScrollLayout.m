@@ -33,8 +33,8 @@
     }
     return self;
 }
-                 
-                 
+
+
 #pragma mark - Custom accessors
 
 - (MJGLKView*)scrolledView {

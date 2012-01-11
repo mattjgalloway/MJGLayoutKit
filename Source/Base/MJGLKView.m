@@ -12,6 +12,8 @@
 
 #import "MJGLKView.h"
 
+#import "MJGLKViewDelegate.h"
+
 #import "MJGLKLayout.h"
 #import "MJGLKRootView.h"
 
@@ -29,6 +31,7 @@
 @synthesize measuredSize = _measuredSize;
 @synthesize layout = _layout;
 @synthesize rootView = _rootView;
+@synthesize delegate = _delegate;
 @synthesize lastWidth = _lastWidth;
 @synthesize lastHeight = _lastHeight;
 @synthesize forceLayout = _forceLayout;
@@ -64,11 +67,27 @@
 
 - (void)updateViewWidth:(MJGLKDimension)width andHeight:(MJGLKDimension)height {
     if (_forceLayout || !MJGLKDimensionEqual(width, _lastWidth) || !MJGLKDimensionEqual(height, _lastHeight)) {
+        if ([_delegate respondsToSelector:@selector(lkViewWillMeasureView:)]) {
+            [_delegate lkViewWillMeasureView:self];
+        }
         [self measureViewWithWidth:width andHeight:height];
+        if ([_delegate respondsToSelector:@selector(lkViewDidMeasureView:)]) {
+            [_delegate lkViewDidMeasureView:self];
+        }
     }
     _lastWidth = width;
     _lastHeight = height;
     _forceLayout = NO;
+}
+
+- (void)layoutView {
+    if ([_delegate respondsToSelector:@selector(lkViewWillLayoutView:)]) {
+        [_delegate lkViewWillLayoutView:self];
+    }
+    [self performLayoutView];
+    if ([_delegate respondsToSelector:@selector(lkViewDidLayoutView:)]) {
+        [_delegate lkViewDidLayoutView:self];
+    }
 }
 
 
@@ -86,7 +105,7 @@
                                  userInfo:nil];
 }
 
-- (void)layoutView {
+- (void)performLayoutView {
     @throw [NSException exceptionWithName:NSInternalInconsistencyException 
                                    reason:[NSString stringWithFormat:@"Subclasses must override %@.", NSStringFromSelector(_cmd)] 
                                  userInfo:nil];

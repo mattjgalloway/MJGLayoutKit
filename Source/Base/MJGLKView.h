@@ -12,6 +12,7 @@
 
 @class MJGLKLayout;
 @class MJGLKRootView;
+@protocol MJGLKViewDelegate;
 
 @interface MJGLKView : NSObject
 
@@ -22,16 +23,19 @@
 @property (nonatomic, unsafe_unretained, readonly) MJGLKLayout *layout;
 @property (nonatomic, unsafe_unretained, readonly) MJGLKRootView *rootView;
 
+@property (nonatomic, unsafe_unretained) id <MJGLKViewDelegate> delegate;
+
 - (void)removeFromLayout;
 - (void)setNeedsLayout;
 
 - (void)updateViewWidth:(MJGLKDimension)width andHeight:(MJGLKDimension)height;
+- (void)layoutView;
 
 /**
  * Subclasses must implement the following methods
  */
 - (UIView*)view;
 - (void)measureViewWithWidth:(MJGLKDimension)width andHeight:(MJGLKDimension)height;
-- (void)layoutView;
+- (void)performLayoutView;
 
 @end

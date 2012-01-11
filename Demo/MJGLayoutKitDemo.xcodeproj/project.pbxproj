@@ -62,6 +62,7 @@
 		C952365114B8BE2C00B880D3 /* MJGLKScrollLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGLKScrollLayout.m; sourceTree = "<group>"; };
 		C952365214B8BE2C00B880D3 /* MJGLKUIViewWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGLKUIViewWrapper.h; sourceTree = "<group>"; };
 		C952365314B8BE2C00B880D3 /* MJGLKUIViewWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGLKUIViewWrapper.m; sourceTree = "<group>"; };
+		C984F66814BDDAD70014475B /* MJGLKViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGLKViewDelegate.h; sourceTree = "<group>"; };
 		C9DE3E4414B5AEFE0043D446 /* BeerMap_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BeerMap_Logo.png; sourceTree = "<group>"; };
 		C9DE3E4614B5AEFE0043D446 /* ViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "ViewController~ipad.xib"; sourceTree = "<group>"; };
 		C9DE3E4714B5AEFE0043D446 /* ViewController~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "ViewController~iphone.xib"; sourceTree = "<group>"; };
@@ -182,6 +183,7 @@
 				C952364214B8BE2C00B880D3 /* MJGLKRootView.m */,
 				C952364314B8BE2C00B880D3 /* MJGLKView.h */,
 				C952364414B8BE2C00B880D3 /* MJGLKView.m */,
+				C984F66814BDDAD70014475B /* MJGLKViewDelegate.h */,
 			);
 			path = Base;
 			sourceTree = "<group>";

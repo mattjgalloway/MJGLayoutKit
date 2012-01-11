@@ -119,7 +119,7 @@
     self.measuredSize = newMeasuredSize;
 }
 
-- (void)layoutView {
+- (void)performLayoutView {
     [self.scrollView addSubview:self.scrolledView.view];
     self.scrolledView.view.frame = CGRectMake(0.0f, 
                                               0.0f, 

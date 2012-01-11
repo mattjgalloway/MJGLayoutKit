@@ -178,7 +178,7 @@
     }
 }
 
-- (void)layoutView {
+- (void)performLayoutView {
     if (_orientation == MJGLKLinearLayoutOrientationVertical) {
         CGFloat currentX = self.layoutSpec.padding.left;
         CGFloat currentY = self.layoutSpec.padding.top;

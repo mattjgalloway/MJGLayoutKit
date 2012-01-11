@@ -87,7 +87,7 @@
     self.measuredSize = CGSizeMake(maxWidth, maxHeight);
 }
 
-- (void)layoutView {
+- (void)performLayoutView {
     for (MJGLKView *view in self.views) {
         [self.view addSubview:view.view];
         [self.view bringSubviewToFront:view.view];

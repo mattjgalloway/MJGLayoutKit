@@ -85,7 +85,7 @@
     self.measuredSize = newMeasuredSize;
 }
 
-- (void)layoutView {
+- (void)performLayoutView {
 }
 
 @end

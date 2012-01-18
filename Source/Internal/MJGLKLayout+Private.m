@@ -68,4 +68,25 @@
     return MJGLKDimensionMake(size, constraint);
 }
 
+- (MJGLKGravity)_resolveGravityFromParentGravity:(MJGLKGravity)parentGravity andChildLayoutGravity:(MJGLKGravity)childLayoutGravity {
+    MJGLKGravity parentHorizontalGravity = parentGravity & MJGLKGravityHorizontalMask;
+    MJGLKGravity parentVerticalGravity = parentGravity & MJGLKGravityVerticalMask;
+    MJGLKGravity childHorizontalGravity = childLayoutGravity & MJGLKGravityHorizontalMask;
+    MJGLKGravity childVerticalGravity = childLayoutGravity & MJGLKGravityVerticalMask;
+    
+    MJGLKGravity resolvedGravity = MJGLKGravityUnspecified;
+    if (childHorizontalGravity != MJGLKGravityUnspecified) {
+        resolvedGravity |= childHorizontalGravity;
+    } else {
+        resolvedGravity |= parentHorizontalGravity;
+    }
+    if (childVerticalGravity != MJGLKGravityUnspecified) {
+        resolvedGravity |= childVerticalGravity;
+    } else {
+        resolvedGravity |= parentVerticalGravity;
+    }
+    
+    return resolvedGravity;
+}
+
 @end

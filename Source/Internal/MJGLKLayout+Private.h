@@ -15,5 +15,6 @@
 @interface MJGLKLayout (Private)
 
 - (MJGLKDimension)_childDimensionFromParentDimension:(MJGLKDimension)parentDimension withPadding:(NSInteger)padding withChildSize:(NSInteger)childSize;
+- (MJGLKGravity)_resolveGravityFromParentGravity:(MJGLKGravity)parentGravity andChildLayoutGravity:(MJGLKGravity)childLayoutGravity;
 
 @end

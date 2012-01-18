@@ -89,13 +89,50 @@
 
 - (void)performLayoutView {
     for (MJGLKView *view in self.views) {
+        MJGLKGravity childGravity = [self _resolveGravityFromParentGravity:self.layoutSpec.gravity andChildLayoutGravity:view.layoutSpec.layoutGravity];
+        
+        CGRect childFrame = CGRectZero;
+        childFrame.size = CGSizeMake(view.measuredSize.width, view.measuredSize.height);
+        
+        MJGLKGravity childHorizontalGravity = childGravity & MJGLKGravityHorizontalMask;
+        switch (childHorizontalGravity) {
+            case MJGLKGravityLeft: {
+                childFrame.origin.x = self.layoutSpec.padding.left + view.layoutSpec.margin.left;
+            }
+                break;
+            case MJGLKGravityRight: {
+                childFrame.origin.x = self.measuredSize.width - self.layoutSpec.padding.right - view.measuredSize.width - view.layoutSpec.margin.right;
+            }
+                break;
+            case MJGLKGravityCenterHorizontal:
+            case MJGLKGravityUnspecified:
+            default: {
+                childFrame.origin.x = (self.measuredSize.width - view.measuredSize.width) / 2.0f;
+            }
+                break;
+        }
+        
+        MJGLKGravity childVerticalGravity = childGravity & MJGLKGravityVerticalMask;
+        switch (childVerticalGravity) {
+            case MJGLKGravityTop: {
+                childFrame.origin.y = self.layoutSpec.padding.top + view.layoutSpec.margin.top;
+            }
+                break;
+            case MJGLKGravityBottom: {
+                childFrame.origin.y = self.measuredSize.height - self.layoutSpec.padding.bottom - view.measuredSize.height - view.layoutSpec.margin.bottom;
+            }
+                break;
+            case MJGLKGravityCenterVertical:
+            case MJGLKGravityUnspecified:
+            default: {
+                childFrame.origin.y = (self.measuredSize.height - view.measuredSize.height) / 2.0f;
+            }
+                break;
+        }
+        
         [self.view addSubview:view.view];
         [self.view bringSubviewToFront:view.view];
-        view.view.frame = CGRectMake(0.0f, 
-                                     0.0f, 
-                                     view.measuredSize.width, 
-                                     view.measuredSize.height);
-        view.view.center = CGPointMake(floorf(self.measuredSize.width / 2.0f), floorf(self.measuredSize.height / 2.0f));
+        view.view.frame = childFrame;
         [view layoutView];
     }
 }

@@ -180,30 +180,72 @@
 
 - (void)performLayoutView {
     if (_orientation == MJGLKLinearLayoutOrientationVertical) {
-        CGFloat currentX = self.layoutSpec.padding.left;
         CGFloat currentY = self.layoutSpec.padding.top;
         
         for (MJGLKView *view in self.views) {
-            [self.view addSubview:view.view];
+            MJGLKGravity childGravity = [self _resolveGravityFromParentGravity:self.layoutSpec.gravity andChildLayoutGravity:view.layoutSpec.layoutGravity];
+            
             currentY += view.layoutSpec.margin.top;
-            view.view.frame = CGRectMake(currentX + view.layoutSpec.margin.left, 
-                                         currentY, 
-                                         view.measuredSize.width, 
-                                         view.measuredSize.height);
+            
+            CGRect childFrame = CGRectZero;
+            childFrame.size = CGSizeMake(view.measuredSize.width, view.measuredSize.height);
+            childFrame.origin.y = currentY;
+            
+            MJGLKGravity childHorizontalGravity = childGravity & MJGLKGravityHorizontalMask;
+            switch (childHorizontalGravity) {
+                case MJGLKGravityLeft:
+                case MJGLKGravityUnspecified:
+                default: {
+                    childFrame.origin.x = self.layoutSpec.padding.left + view.layoutSpec.margin.left;
+                }
+                    break;
+                case MJGLKGravityRight: {
+                    childFrame.origin.x = self.measuredSize.width - self.layoutSpec.padding.right - view.measuredSize.width - view.layoutSpec.margin.right;
+                }
+                    break;
+                case MJGLKGravityCenterHorizontal: {
+                    childFrame.origin.x = (self.measuredSize.width - view.measuredSize.width) / 2.0f;
+                }
+                    break;
+            }
+            
+            [self.view addSubview:view.view];
+            view.view.frame = childFrame;
             [view layoutView];
             currentY += (view.measuredSize.height + view.layoutSpec.margin.bottom);
         }
     } else {
         CGFloat currentX = self.layoutSpec.padding.left;
-        CGFloat currentY = self.layoutSpec.padding.top;
         
         for (MJGLKView *view in self.views) {
-            [self.view addSubview:view.view];
+            MJGLKGravity childGravity = [self _resolveGravityFromParentGravity:self.layoutSpec.gravity andChildLayoutGravity:view.layoutSpec.layoutGravity];
+            
             currentX += view.layoutSpec.margin.left;
-            view.view.frame = CGRectMake(currentX, 
-                                         currentY + view.layoutSpec.margin.top, 
-                                         view.measuredSize.width, 
-                                         view.measuredSize.height);
+            
+            CGRect childFrame = CGRectZero;
+            childFrame.size = CGSizeMake(view.measuredSize.width, view.measuredSize.height);
+            childFrame.origin.x = currentX;
+            
+            MJGLKGravity childVerticalGravity = childGravity & MJGLKGravityVerticalMask;
+            switch (childVerticalGravity) {
+                case MJGLKGravityTop:
+                case MJGLKGravityUnspecified:
+                default: {
+                    childFrame.origin.y = self.layoutSpec.padding.top + view.layoutSpec.margin.top;
+                }
+                    break;
+                case MJGLKGravityBottom: {
+                    childFrame.origin.y = self.measuredSize.height - self.layoutSpec.padding.bottom - view.measuredSize.height - view.layoutSpec.margin.bottom;
+                }
+                    break;
+                case MJGLKGravityCenterVertical: {
+                    childFrame.origin.y = (self.measuredSize.height - view.measuredSize.height) / 2.0f;
+                }
+                    break;
+            }
+            
+            [self.view addSubview:view.view];
+            view.view.frame = childFrame;
             [view layoutView];
             currentX += (view.measuredSize.width + view.layoutSpec.margin.right);
         }

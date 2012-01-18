@@ -12,12 +12,38 @@
 
 #import "MJGLKDataStructures.h"
 
-const MJGLKLayoutSpec MJGLKLayoutSpecZero = {0, 0, 0.0f, {0.0f, 0.0f, 0.0f, 0.0f}, {0.0f, 0.0f, 0.0f, 0.0f}};
+const NSUInteger MJGLKGravityVerticalMask   = 0x0000000F;
+const NSUInteger MJGLKGravityHorizontalMask = 0x000000F0;
+
+const MJGLKLayoutSpec MJGLKLayoutSpecZero = {0, 0, 0.0f, {0.0f, 0.0f, 0.0f, 0.0f}, {0.0f, 0.0f, 0.0f, 0.0f}, 0, 0};
 
 const MJGLKDimension MJGLKDimensionZero = {0, MJGLKSizeConstraintUnspecified};
 
+extern NSString* NSStringFromMJGLKGravity(MJGLKGravity gravity) {
+    NSMutableArray *components = [NSMutableArray arrayWithCapacity:0];
+    if (gravity & MJGLKGravityTop) {
+        [components addObject:@"TOP"];
+    }
+    if (gravity & MJGLKGravityBottom) {
+        [components addObject:@"BOTTOM"];
+    }
+    if (gravity & MJGLKGravityCenterVertical) {
+        [components addObject:@"CENTERVERTICAL"];
+    }
+    if (gravity & MJGLKGravityLeft) {
+        [components addObject:@"LEFT"];
+    }
+    if (gravity & MJGLKGravityRight) {
+        [components addObject:@"RIGHT"];
+    }
+    if (gravity & MJGLKGravityCenterHorizontal) {
+        [components addObject:@"CENTERHORIZONTAL"];
+    }
+    return [components componentsJoinedByString:@"|"];
+}
+
 NSString* NSStringFromMJGLKLayoutSpec(MJGLKLayoutSpec layoutSpec) {
-    return [NSString stringWithFormat:@"{%d,%d,%.2f,%@,%@}", layoutSpec.width, layoutSpec.height, layoutSpec.weight, NSStringFromUIEdgeInsets(layoutSpec.margin), NSStringFromUIEdgeInsets(layoutSpec.padding)];
+    return [NSString stringWithFormat:@"{%d,%d,%.2f,%@,%@,%@,%@}", layoutSpec.width, layoutSpec.height, layoutSpec.weight, NSStringFromUIEdgeInsets(layoutSpec.margin), NSStringFromUIEdgeInsets(layoutSpec.padding), NSStringFromMJGLKGravity(layoutSpec.layoutGravity), NSStringFromMJGLKGravity(layoutSpec.gravity)];
 }
 
 NSString* NSStringFromMJGLKDimension(MJGLKDimension dimension) {

@@ -13,26 +13,46 @@
 
 /* Layout spec definition */
 
+enum {
+    MJGLKGravityUnspecified      = 0,
+    MJGLKGravityTop              = 1 << 0,
+    MJGLKGravityBottom           = 1 << 1,
+    MJGLKGravityCenterVertical   = 1 << 2,
+    MJGLKGravityLeft             = 1 << 4,
+    MJGLKGravityRight            = 1 << 5,
+    MJGLKGravityCenterHorizontal = 1 << 6,
+    MJGLKGravityCenter           = MJGLKGravityCenterVertical | MJGLKGravityCenterHorizontal,
+};
+typedef NSUInteger MJGLKGravity;
+
+extern const NSUInteger MJGLKGravityVerticalMask;
+extern const NSUInteger MJGLKGravityHorizontalMask;
+
 typedef struct {
     NSInteger width;
     NSInteger height;
     CGFloat weight;
     UIEdgeInsets margin;
     UIEdgeInsets padding;
+    MJGLKGravity layoutGravity;
+    MJGLKGravity gravity;
 } MJGLKLayoutSpec;
 
 extern const MJGLKLayoutSpec MJGLKLayoutSpecZero;
 
-static inline MJGLKLayoutSpec MJGLKLayoutSpecMake(NSInteger width, NSInteger height, CGFloat weight, UIEdgeInsets margin, UIEdgeInsets padding) {
+static inline MJGLKLayoutSpec MJGLKLayoutSpecMake(NSInteger width, NSInteger height, CGFloat weight, UIEdgeInsets margin, UIEdgeInsets padding, MJGLKGravity layoutGravity, MJGLKGravity gravity) {
     MJGLKLayoutSpec layoutSpec;
     layoutSpec.width = width;
     layoutSpec.height = height;
     layoutSpec.weight = weight;
     layoutSpec.margin = margin;
     layoutSpec.padding = padding;
+    layoutSpec.layoutGravity = layoutGravity;
+    layoutSpec.gravity = gravity;
     return layoutSpec;
 }
 
+extern NSString* NSStringFromMJGLKGravity(MJGLKGravity gravity);
 extern NSString* NSStringFromMJGLKLayoutSpec(MJGLKLayoutSpec layoutSpec);
 
 

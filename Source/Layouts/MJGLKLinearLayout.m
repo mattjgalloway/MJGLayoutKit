@@ -38,6 +38,17 @@
 }
 
 
+#pragma mark - Custom accessors
+
+- (UIColor*)backgroundColor {
+    return self.wrapperView.backgroundColor;
+}
+
+- (void)setBackgroundColor:(UIColor*)backgroundColor {
+    self.wrapperView.backgroundColor = backgroundColor;
+}
+
+
 #pragma mark -
 
 - (UIView*)view {

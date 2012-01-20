@@ -12,6 +12,8 @@
 
 @interface MJGLKScrollLayout : MJGLKLayout
 
+@property (nonatomic, strong) UIColor *backgroundColor;
+
 - (id)initWithView:(MJGLKView*)view;
 
 @end

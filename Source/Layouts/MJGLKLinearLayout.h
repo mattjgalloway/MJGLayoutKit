@@ -16,6 +16,7 @@ typedef enum {
 @interface MJGLKLinearLayout : MJGLKLayout
 
 @property (nonatomic, assign, readonly) MJGLKLinearLayoutOrientation orientation;
+@property (nonatomic, strong) UIColor *backgroundColor;
 
 - (id)initWithOrientation:(MJGLKLinearLayoutOrientation)orientation views:(NSArray*)views;
 

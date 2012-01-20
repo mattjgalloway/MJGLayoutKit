@@ -21,6 +21,7 @@
 
 @implementation MJGLKScrollLayout
 
+@synthesize backgroundColor = _backgroundColor;
 @synthesize scrollView = _scrollView;
 
 #pragma mark -
@@ -36,6 +37,14 @@
 
 
 #pragma mark - Custom accessors
+
+- (UIColor*)backgroundColor {
+    return self.scrollView.backgroundColor;
+}
+
+- (void)setBackgroundColor:(UIColor*)backgroundColor {
+    self.scrollView.backgroundColor = backgroundColor;
+}
 
 - (MJGLKView*)scrolledView {
     return [self.views objectAtIndex:0];

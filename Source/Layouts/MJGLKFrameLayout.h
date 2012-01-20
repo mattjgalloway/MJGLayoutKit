@@ -10,6 +10,8 @@
 
 @interface MJGLKFrameLayout : MJGLKLayout
 
+@property (nonatomic, strong) UIColor *backgroundColor;
+
 - (id)initWithViews:(NSArray*)views;
 
 @end

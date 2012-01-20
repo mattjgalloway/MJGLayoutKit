@@ -52,7 +52,7 @@
     self.image.layoutSpec = MJGLKLayoutSpecMake(MJGLKSizeWrapContent, MJGLKSizeWrapContent, 0.0f, UIEdgeInsetsMake(5.0f, 5.0f, 5.0f, 5.0f), UIEdgeInsetsZero, MJGLKGravityCenter, MJGLKGravityCenter);
     
     UIView *filler1View = [[UIView alloc] initWithFrame:CGRectZero];
-    filler1View.backgroundColor = [UIColor blueColor];
+    filler1View.backgroundColor = [UIColor clearColor];
     MJGLKUIViewWrapper *filler1 = [[MJGLKUIViewWrapper alloc] initWithUIView:filler1View];
     filler1.layoutSpec = MJGLKLayoutSpecMake(MJGLKSizeFillParent, MJGLKSizeFillParent, 1.0f, UIEdgeInsetsMake(10.0f, 10.0f, 10.0f, 10.0f), UIEdgeInsetsZero, MJGLKGravityCenter, MJGLKGravityCenter);
     
@@ -73,6 +73,7 @@
     
     MJGLKFrameLayout *frameLayout = [[MJGLKFrameLayout alloc] initWithViews:[NSArray arrayWithObjects:filler1, filler3, filler4, nil]];
     frameLayout.layoutSpec = MJGLKLayoutSpecMake(MJGLKSizeFillParent, MJGLKSizeWrapContent, 0.0f, UIEdgeInsetsZero, UIEdgeInsetsZero, MJGLKGravityCenter, MJGLKGravityUnspecified);
+    frameLayout.backgroundColor = [UIColor brownColor];
     
     MJGLKScrollLayout *scrollLayout = [[MJGLKScrollLayout alloc] initWithView:frameLayout];
     scrollLayout.layoutSpec = MJGLKLayoutSpecMake(MJGLKSizeFillParent, MJGLKSizeFillParent, 1.0f, UIEdgeInsetsZero, UIEdgeInsetsZero, MJGLKGravityCenter, MJGLKGravityCenter);

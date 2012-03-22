@@ -34,6 +34,10 @@
     return self;
 }
 
+- (void)dealloc {
+    self.view.rootView = nil;
+}
+
 
 #pragma mark -
 

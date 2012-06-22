@@ -86,7 +86,7 @@
     vLinearLayout.layoutSpec = MJGLKLayoutSpecMake(MJGLKSizeFillParent, MJGLKSizeFillParent, 1.0f, UIEdgeInsetsZero, UIEdgeInsetsZero, MJGLKGravityCenter, MJGLKGravityCenter);
     
     self.layout = [[MJGLKRootView alloc] initWithView:vLinearLayout];
-    
+    self.layout.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     self.layout.frame = self.layoutContainer.bounds;
     [self.layoutContainer addSubview:self.layout];
 }
